@@ -20,21 +20,33 @@
                 <labels>
                     <label locale="en">Business Practices Review</label>
                 </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
             </topicDocumentation>
             <topicDocumentation name="USER_TASK_1392671508851">
                 <labels>
                     <label locale="en">Approve Deal</label>
                 </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
             </topicDocumentation>
             <topicDocumentation name="USER_TASK_1392671509674">
                 <labels>
                     <label locale="en">Approve Terms</label>
                 </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
             </topicDocumentation>
             <topicDocumentation name="USER_TASK_1392671511997">
                 <labels>
                     <label locale="en">Finalize Terms</label>
                 </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
             </topicDocumentation>
             <topicDocumentation name="BUSINESS_RULE_TASK_1392682125820">
                 <labels>

@@ -24,8 +24,36 @@
  <component name="EnterQuoteDetails">
   <implementation.workflow src="EnterQuoteDetails.task"/>
  </component>
+ <component name="BusinessPracticesReview">
+  <implementation.workflow src="BusinessPracticesReview.task"/>
+ </component>
+ <component name="ApproveDeal">
+  <implementation.workflow src="ApproveDeal.task"/>
+ </component>
+ <component name="ApproveTerms">
+  <implementation.workflow src="ApproveTerms.task"/>
+ </component>
+ <component name="FinalizeTerms">
+  <implementation.workflow src="FinalizeTerms.task"/>
+ </component>
  <wire>
   <source.uri>SalesQuote/HumanTasks.EnterQuoteDetails.reference</source.uri>
   <target.uri>EnterQuoteDetails/TaskService</target.uri>
+ </wire>
+ <wire>
+  <source.uri>SalesQuote/HumanTasks.BusinessPracticesReview.reference</source.uri>
+  <target.uri>BusinessPracticesReview/TaskService</target.uri>
+ </wire>
+ <wire>
+  <source.uri>SalesQuote/HumanTasks.ApproveDeal.reference</source.uri>
+  <target.uri>ApproveDeal/TaskService</target.uri>
+ </wire>
+ <wire>
+  <source.uri>SalesQuote/HumanTasks.ApproveTerms.reference</source.uri>
+  <target.uri>ApproveTerms/TaskService</target.uri>
+ </wire>
+ <wire>
+  <source.uri>SalesQuote/HumanTasks.FinalizeTerms.reference</source.uri>
+  <target.uri>FinalizeTerms/TaskService</target.uri>
  </wire>
 </composite>
