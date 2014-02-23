@@ -1251,13 +1251,15 @@
                     <ns5:Localization>
                         <ns5:Label>
                             <ns5:LocalizedContent language="en">workLocal
-</ns5:LocalizedContent>
+
+new</ns5:LocalizedContent>
                         </ns5:Label>
                     </ns5:Localization>
                 </ns5:OracleExtensions>
             </extensionElements>
             <text>workLocal
-</text>
+
+new</text>
         </artifact>
     </process>
 </definitions>
