@@ -2,7 +2,35 @@
 <?oracleBPM version="11.1.1.7.0.0.8" fileRevision="20090820"?>
 <ns1:organization xmlns:ns2="http://xmlns.oracle.com/bpm/lpg/peopleQuery" xmlns:ns1="http://xmlns.oracle.com/bpm/organization" xmlns:ns4="http://xmlns.oracle.com/bpel/workflow/task" xmlns:ns3="http://xmlns.oracle.com/bpel/workflow/taskQuery" xmlns:ns5="http://xmlns.oracle.com/bpm/identity">
     <ns1:updateExistingObjects>false</ns1:updateExistingObjects>
-    <ns1:organizationalUnits/>
+    <ns1:organizationalUnits>
+        <ns1:organizationalUnit>
+            <ns1:organizationalUnitId>579b6601-74c5-4740-9ee8-35c9de52f24a</ns1:organizationalUnitId>
+            <ns1:organizationalUnitName>Sales</ns1:organizationalUnitName>
+            <ns1:description></ns1:description>
+        </ns1:organizationalUnit>
+        <ns1:organizationalUnit>
+            <ns1:organizationalUnitId>994f2479-df8a-4900-a4dd-35ca338d0bef</ns1:organizationalUnitId>
+            <ns1:parentOrganizationalUnitId>579b6601-74c5-4740-9ee8-35c9de52f24a</ns1:parentOrganizationalUnitId>
+            <ns1:parentOrganizationalUnitName>Sales</ns1:parentOrganizationalUnitName>
+            <ns1:organizationalUnitName>eastern</ns1:organizationalUnitName>
+            <ns1:description></ns1:description>
+            <ns1:member type="USER">
+                <ns1:name>doug</ns1:name>
+                <ns1:memberId>55913a3a-14a8-46f5-9dec-9895d5746ca7</ns1:memberId>
+            </ns1:member>
+        </ns1:organizationalUnit>
+        <ns1:organizationalUnit>
+            <ns1:organizationalUnitId>96fba1da-d908-4a4a-b553-545f181a95ba</ns1:organizationalUnitId>
+            <ns1:parentOrganizationalUnitId>579b6601-74c5-4740-9ee8-35c9de52f24a</ns1:parentOrganizationalUnitId>
+            <ns1:parentOrganizationalUnitName>Sales</ns1:parentOrganizationalUnitName>
+            <ns1:organizationalUnitName>western</ns1:organizationalUnitName>
+            <ns1:description></ns1:description>
+            <ns1:member type="USER">
+                <ns1:name>stuart</ns1:name>
+                <ns1:memberId>5f5c6f16-af6d-472d-bcf6-51998b78eb91</ns1:memberId>
+            </ns1:member>
+        </ns1:organizationalUnit>
+    </ns1:organizationalUnits>
     <ns1:applicationRoles>
         <ns1:applicationRole id="SSFBpmUni.ProcessOwner" isProcessRole="false">
             <ns5:name>SSFBpmUni.Process Owner</ns5:name>
