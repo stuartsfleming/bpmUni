@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="11.1.1.7.0.0.8" fileRevision="20120217"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+    <component name="SalesQuote">
+        <topicDocumentations>
+            <topicDocumentation name="SalesQuote">
+                <labels>
+                    <label locale="en">SalesQuote</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="USER_TASK_1392671489620">
+                <labels>
+                    <label locale="en">Enter Quote Details</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="USER_TASK_1392671500101">
+                <labels>
+                    <label locale="en">Business Practices Review</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="USER_TASK_1392671508851">
+                <labels>
+                    <label locale="en">Approve Deal</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="USER_TASK_1392671509674">
+                <labels>
+                    <label locale="en">Approve Terms</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="USER_TASK_1392671511997">
+                <labels>
+                    <label locale="en">Finalize Terms</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="BUSINESS_RULE_TASK_1392682125820">
+                <labels>
+                    <label locale="en">Determine Approvals</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="SCRIPT_TASK_1392682130975">
+                <labels>
+                    <label locale="en">Script Task</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT9107920146325">
+                <labels>
+                    <label locale="en">Start</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="EVT9107920146450">
+                <labels>
+                    <label locale="en">End</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="EXCLUSIVE_GATEWAY_1392682149642">
+                <labels>
+                    <label locale="en">Is Business Practices Review Required</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="PARALLEL_GATEWAY_1392682229917">
+                <labels>
+                    <label locale="en">Approvals</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="PARALLEL_GATEWAY_1392682229917M">
+                <labels>
+                    <label locale="en">Parallel GatewayMerge</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="EXCLUSIVE_GATEWAY_1392682250131">
+                <labels>
+                    <label locale="en">Exclusive Gateway1</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="EXCLUSIVE_GATEWAY_1392682298798">
+                <labels>
+                    <label locale="en">Business Practices Outcome</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="sf4"/>
+            <topicDocumentation name="sf_1392671489623"/>
+            <topicDocumentation name="sf_1392671511999"/>
+            <topicDocumentation name="sf_1392682133028"/>
+            <topicDocumentation name="sf_1392682156275"/>
+            <topicDocumentation name="sf_1392682161568"/>
+            <topicDocumentation name="sf_1392682229921"/>
+            <topicDocumentation name="sf_1392682239810"/>
+            <topicDocumentation name="sf_1392682243164"/>
+            <topicDocumentation name="sf_1392682245675"/>
+            <topicDocumentation name="sf_1392682256084"/>
+            <topicDocumentation name="sf_1392682266101">
+                <labels>
+                    <label locale="en">Approved</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="sf_1392682275016">
+                <labels>
+                    <label locale="en">Deal or Terms Rejected</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="sf_1392682301899">
+                <labels>
+                    <label locale="en">Business Practices Reject</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="sf_1392682310145"/>
+            <topicDocumentation name="sf_1392682354018">
+                <labels>
+                    <label locale="en">Business Practices Approve</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="sf_1392682370276">
+                <labels>
+                    <label locale="en">Review Not Required</label>
+                </labels>
+            </topicDocumentation>
+        </topicDocumentations>
+    </component>
+</processDocumentation>
