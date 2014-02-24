@@ -81,7 +81,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="301" y="102"/>
+                        <ns5:Position x="316" y="99"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -824,7 +824,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="176" y="100"/>
+                        <ns5:Position x="198" y="98"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -1238,28 +1238,5 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </dataObject>
-        <artifact xsi:type="tTextAnnotation" id="textAnnotation">
-            <extensionElements>
-                <ns5:OracleExtensions>
-                    <ns5:GraphicsAttributes>
-                        <ns5:Position x="679" y="64"/>
-                        <ns5:Size width="120" height="50"/>
-                    </ns5:GraphicsAttributes>
-                    <ns5:FeatureSet>
-                        <ns5:StringFeature value="" name="associatedNode"/>
-                    </ns5:FeatureSet>
-                    <ns5:Localization>
-                        <ns5:Label>
-                            <ns5:LocalizedContent language="en">workLocal
-
-new</ns5:LocalizedContent>
-                        </ns5:Label>
-                    </ns5:Localization>
-                </ns5:OracleExtensions>
-            </extensionElements>
-            <text>workLocal
-
-new</text>
-        </artifact>
     </process>
 </definitions>
