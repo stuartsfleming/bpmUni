@@ -16,7 +16,7 @@
             <ns1:description></ns1:description>
             <ns1:member type="USER">
                 <ns1:name>doug</ns1:name>
-                <ns1:memberId>58e7c083-4944-4d5c-9fce-f44ff3e80960</ns1:memberId>
+                <ns1:memberId>3d2161ad-35db-4fdf-b1de-f692d346cbd7</ns1:memberId>
             </ns1:member>
         </ns1:organizationalUnit>
         <ns1:organizationalUnit>
@@ -27,7 +27,7 @@
             <ns1:description></ns1:description>
             <ns1:member type="USER">
                 <ns1:name>stuart</ns1:name>
-                <ns1:memberId>b9486d31-60fd-4b73-99c3-0907581e4391</ns1:memberId>
+                <ns1:memberId>40a77b63-ff0f-433c-94c2-0066858f9740</ns1:memberId>
             </ns1:member>
         </ns1:organizationalUnit>
     </ns1:organizationalUnits>
@@ -38,21 +38,33 @@
         </ns1:applicationRole>
         <ns1:applicationRole id="SSFBpmUni.SalesRep" isProcessRole="true">
             <ns5:name>SSFBpmUni.SalesRep</ns5:name>
+            <ns1:member type="USER">
+                <ns1:name>stuart</ns1:name>
+            </ns1:member>
             <ns1:processRole id="SalesRep" name="SalesRep"/>
         </ns1:applicationRole>
         <ns1:applicationRole id="SSFBpmUni.BusinessPractices" isProcessRole="true">
             <ns5:name>SSFBpmUni.BusinessPractices</ns5:name>
+            <ns1:member type="APPROLE">
+                <ns1:applicationContext>OracleBPMProcessRolesApp</ns1:applicationContext>
+                <ns1:name>SalesQuoteApp.BusinessPracticeReview</ns1:name>
+            </ns1:member>
             <ns1:processRole id="BusinessPractices" name="BusinessPractices"/>
         </ns1:applicationRole>
         <ns1:applicationRole id="SSFBpmUni.Approvers" isProcessRole="true">
             <ns5:name>SSFBpmUni.Approvers</ns5:name>
-            <ns1:member type="USER">
-                <ns1:name>stuart</ns1:name>
+            <ns1:member type="APPROLE">
+                <ns1:applicationContext>OracleBPMProcessRolesApp</ns1:applicationContext>
+                <ns1:name>SalesQuoteApp.Approvers</ns1:name>
             </ns1:member>
             <ns1:processRole id="Approvers" name="Approvers"/>
         </ns1:applicationRole>
         <ns1:applicationRole id="SSFBpmUni.Contract" isProcessRole="true">
             <ns5:name>SSFBpmUni.Contract</ns5:name>
+            <ns1:member type="APPROLE">
+                <ns1:applicationContext>OracleBPMProcessRolesApp</ns1:applicationContext>
+                <ns1:name>SalesQuoteApp.Contracts</ns1:name>
+            </ns1:member>
             <ns1:processRole id="Contract" name="Contract"/>
         </ns1:applicationRole>
     </ns1:applicationRoles>
