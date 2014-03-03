@@ -94,6 +94,7 @@
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                         <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
                         <ns5:StringFeature value="INITIATOR" name="humanTaskType"/>
+                        <ns5:StringFeature value="" name="reinitiateSource"/>
                         <ns5:AttributeExpression attributeName="subjectExpressionFeature" language="http://www.w3.org/1999/XPath">'Enter Quote Details'
                             <extensionElements>
                                 <ns5:OracleExtensions>
@@ -842,10 +843,88 @@
                         <ns5:StringFeature value="Begin Level" name="level"/>
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                     </ns5:FeatureSet>
+                    <ns5:BusinessRuleTaskData businessRuleName="Rules.SSFBpmUni.ApprovalRules" functionName="ApprovalRules_DecisionService"/>
                     <ns5:LogHandlers/>
                 </ns5:OracleExtensions>
             </extensionElements>
-            <ioSpecification/>
+            <ioSpecification>
+                <dataInput name="quote" id="quote">
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:TypeRef namespace="http://www.mycompany.com/ns/salesquote" element="QuoteRequest" isArray="false"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                </dataInput>
+                <dataOutput name="approvalFlow" id="approvalFlow">
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:TypeRef namespace="http://www.mycompany.com/ns/salesquote" element="ApprovalFlow" isArray="false"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                </dataOutput>
+                <inputSet id="BUSINESS_RULE_TASK_1392682125820_uniqueInputSet">
+                    <dataInputRefs>quote</dataInputRefs>
+                </inputSet>
+                <outputSet id="BUSINESS_RULE_TASK_1392682125820_uniqueOutputSet">
+                    <dataOutputRefs>approvalFlow</dataOutputRefs>
+                </outputSet>
+            </ioSpecification>
+            <dataInputAssociation>
+                <extensionElements>
+                    <ns5:OracleExtensions/>
+                </extensionElements>
+                <sourceRef>quote</sourceRef>
+                <targetRef>quote</targetRef>
+                <assignment>
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:DataAssignment operation="copy"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('quote')
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </from>
+                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataInput('quote')
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </to>
+                </assignment>
+            </dataInputAssociation>
+            <dataOutputAssociation>
+                <extensionElements>
+                    <ns5:OracleExtensions/>
+                </extensionElements>
+                <sourceRef>approvalFlow</sourceRef>
+                <targetRef>ApprovalFlow</targetRef>
+                <assignment>
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:DataAssignment operation="copy"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataOutput('approvalFlow')
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </from>
+                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('ApprovalFlow')
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </to>
+                </assignment>
+            </dataOutputAssociation>
         </businessRuleTask>
         <scriptTask isForCompensation="false" name="Script Task" id="SCRIPT_TASK_1392682130975">
             <extensionElements>
@@ -1261,6 +1340,15 @@
                 <ns5:OracleExtensions>
                     <ns5:DataObjectType initialize="true">
                         <ns5:TypeRef namespace="http://www.mycompany.com/ns/salesquote" element="QuoteRequest" isArray="false"/>
+                    </ns5:DataObjectType>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </dataObject>
+        <dataObject name="ApprovalFlow" id="ApprovalFlow">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:DataObjectType initialize="true">
+                        <ns5:TypeRef namespace="http://www.mycompany.com/ns/salesquote" element="ApprovalFlow" isArray="false"/>
                     </ns5:DataObjectType>
                 </ns5:OracleExtensions>
             </extensionElements>
