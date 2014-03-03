@@ -1171,7 +1171,7 @@
                     </ns5:FeatureSet>
                 </ns5:OracleExtensions>
             </extensionElements>
-            <conditionExpression xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath">true()
+            <conditionExpression xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:xp20="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.Xpath20" ns7:ns="http://www.mycompany.com/ns/salesquote" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">xp20:matches(string(bpmn:getDataObject('ApprovalFlow')/ns:BusinessPracticesReviewNeeded), '\s*(?i:true|1)\s*')
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:Expression mode="simple"/>
