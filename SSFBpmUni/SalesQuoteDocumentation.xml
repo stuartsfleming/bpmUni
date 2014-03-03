@@ -52,6 +52,9 @@
                 <labels>
                     <label locale="en">Determine Approvals</label>
                 </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
             </topicDocumentation>
             <topicDocumentation name="SCRIPT_TASK_1392682130975">
                 <labels>
@@ -101,7 +104,11 @@
             <topicDocumentation name="sf_1392671511999"/>
             <topicDocumentation name="sf_1392682133028"/>
             <topicDocumentation name="sf_1392682156275"/>
-            <topicDocumentation name="sf_1392682161568"/>
+            <topicDocumentation name="sf_1392682161568">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
             <topicDocumentation name="sf_1392682229921"/>
             <topicDocumentation name="sf_1392682239810"/>
             <topicDocumentation name="sf_1392682243164"/>
@@ -116,11 +123,17 @@
                 <labels>
                     <label locale="en">Deal or Terms Rejected</label>
                 </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
             </topicDocumentation>
             <topicDocumentation name="sf_1392682301899">
                 <labels>
                     <label locale="en">Business Practices Reject</label>
                 </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
             </topicDocumentation>
             <topicDocumentation name="sf_1392682310145"/>
             <topicDocumentation name="sf_1392682354018">
@@ -132,6 +145,9 @@
                 <labels>
                     <label locale="en">Review Not Required</label>
                 </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
             </topicDocumentation>
         </topicDocumentations>
     </component>
