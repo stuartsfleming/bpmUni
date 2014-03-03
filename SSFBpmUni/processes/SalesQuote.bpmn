@@ -215,7 +215,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="466" y="340"/>
+                        <ns5:Position x="466" y="336"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -1299,11 +1299,13 @@
         <sequenceFlow sourceRef="EXCLUSIVE_GATEWAY_1392682149642" targetRef="PARALLEL_GATEWAY_1392682229917" name="sf_1392682370276" id="sf_1392682370276">
             <extensionElements>
                 <ns5:OracleExtensions>
-                    <ns5:SequenceFlowAttributes/>
+                    <ns5:SequenceFlowAttributes>
+                        <ns5:Positions x="361" y="429"/>
+                    </ns5:SequenceFlowAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapseMessage"/>
-                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
-                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                        <ns5:StringFeature value="361,429" name="curve"/>
+                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
                     </ns5:FeatureSet>
                 </ns5:OracleExtensions>
             </extensionElements>
