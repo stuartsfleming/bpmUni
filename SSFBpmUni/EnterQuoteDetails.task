@@ -41,7 +41,7 @@
       <allowInitiatorEditParticipants>false</allowInitiatorEditParticipants>
       <allowParticipantsEditParticipants>false</allowParticipantsEditParticipants>
       <globalCreationTask>true</globalCreationTask>
-      <taskFlowFileLocation>file:/C:/JDeveloper/mywork/bpmUniversity/EnterQuoteUILab/public_html/WEB-INF/EnterQuoteDetails_TaskFlow.xml</taskFlowFileLocation>
+      <taskFlowFileLocation>file:/C:/JDeveloper/mywork/bpmUni/EnterQuoteUI/public_html/WEB-INF/EnterQuoteDetails_TaskFlow.xml</taskFlowFileLocation>
       <enableAutoClaim>true</enableAutoClaim>
       <workflowConditions/>
       <taskSequenceTypes>FUTURE</taskSequenceTypes>
