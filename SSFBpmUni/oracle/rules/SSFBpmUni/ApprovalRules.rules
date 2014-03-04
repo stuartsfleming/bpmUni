@@ -5154,6 +5154,81 @@
             <Excluded>false</Excluded>
             <ValidationUpdateNumber>4</ValidationUpdateNumber>
         </BucketSet>
+        <BucketSet id="G}68d0cef3:14488d90874:-7c32">
+            <Name>Bucketset3</Name>
+            <Alias>Bucketset3</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>33</CreationUpdateNumber>
+            <IDofType>J}double</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>double</Type>
+            <Form>Range</Form>
+            <Bucket id="G}68d0cef3:14488d90874:-7c31">
+                <Name>&lt;0.3</Name>
+                <Alias>&lt;0.3</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>33</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>true</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}537">
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c30">
+                <Name>[0.3..0.6)</Name>
+                <Alias>[0.3..0.6)</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>35</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}542">
+                    <Value>0.3</Value>
+                    <ResolvedValue>0.3</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c2f">
+                <Name>[0.6..0.9)</Name>
+                <Alias>[0.6..0.9)</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>36</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}545">
+                    <Value>0.6</Value>
+                    <ResolvedValue>0.6</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c2e">
+                <Name>&gt;=0.9</Name>
+                <Alias>&gt;=0.9</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>37</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}548">
+                    <Value>0.9</Value>
+                    <ResolvedValue>0.9</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <CalendarForm>Date</CalendarForm>
+            <Excluded>false</Excluded>
+            <ValidationUpdateNumber>45</ValidationUpdateNumber>
+        </BucketSet>
         <SupportsXPathEnabled>false</SupportsXPathEnabled>
         <DecisionFunction id="G}-4fa61623:14485880526:-7bd7">
             <Name>ApprovalRules_DecisionService</Name>
@@ -5198,8 +5273,8 @@
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>32</UpdateNumber>
-        <ValidationUpdateNumber>32</ValidationUpdateNumber>
+        <UpdateNumber>45</UpdateNumber>
+        <ValidationUpdateNumber>45</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
     <RuleSet id="G}-4fa61623:14485880526:-7bd8">
@@ -5302,7 +5377,7 @@
         <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
-    <ValidationUpdateNumber>32</ValidationUpdateNumber>
-    <UpdateNumber>32</UpdateNumber>
+    <ValidationUpdateNumber>45</ValidationUpdateNumber>
+    <UpdateNumber>45</UpdateNumber>
     <ResourceBundle>ApprovalRulesTranslations</ResourceBundle>
 </RuleDictionary>
