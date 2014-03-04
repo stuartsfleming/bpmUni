@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93" id="LicenseTermType" Package="EnterQuoteUI_EnterQuoteDetails"
+          BeanClass="EnterQuoteUI_EnterQuoteDetails.LicenseTermType" isJavaBased="false">
+  <Attribute Name="Category" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="nextSibling" Value="Type"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Category"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="Category"/>
+        <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="type" Value="java.lang.String"/>
+        <Property Name="enumeration" Value="[PriceHoldOptions, NonStandardPricingAndCurrencyOptions, LicenseManagementServicesOptions, NonStandardLicensingOptions]"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="Type" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="nextSibling" Value="Description"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Type"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="Type"/>
+        <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="type" Value="java.lang.String"/>
+        <Property Name="enumeration"
+                  Value="[FutureProgramPriceHolds, FutureDiscountProvisions, PriceHoldOnEntirePriceList, ModificationsToContractualPricing, Currency, PreferredCustomerProvisions, WaivingOrLoweringPurchaseMinimums, AuditWaivers, CancelAndReplace, DirectOrderFromCompetitors, ReciprocalTransaction, Hosting, HostingRights, NDA]"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="Description" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="nextSibling" Value="Approval"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Description"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="Description"/>
+        <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <AccessorAttribute id="Approval" IsCollection="true" BeanClass="EnterQuoteUI_EnterQuoteDetails.ApprovalType"
+                     CollectionBeanClass="EnterQuoteUI_EnterQuoteDetails.ApprovalType_Approval_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="0"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="Approval"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="Approval"/>
+      <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

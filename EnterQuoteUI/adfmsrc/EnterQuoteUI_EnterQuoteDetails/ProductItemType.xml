@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93" id="ProductItemType" Package="EnterQuoteUI_EnterQuoteDetails"
+          BeanClass="EnterQuoteUI_EnterQuoteDetails.ProductItemType" isJavaBased="false">
+  <Attribute Name="ProductID" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="nextSibling" Value="ProductName"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Product ID"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="ProductID"/>
+        <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="ProductName" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="nextSibling" Value="Quantity"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Product Name"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="ProductName"/>
+        <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="Quantity" Type="java.lang.Integer">
+    <Properties>
+      <CustomProperties>
+        <Property Name="minInclusive" Value="-2147483648"/>
+        <Property Name="originalName" Value="Quantity"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="nextSibling" Value="ListPrice"/>
+        <Property Name="fractionDigits" Value="0"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="LABEL" Value="Quantity"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="maxInclusive" Value="2147483647"/>
+        <Property Name="type" Value="java.lang.Integer"/>
+        <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="minOccurs" Value="1"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="ListPrice" Type="java.lang.Double">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="nextSibling" Value="PreApprovedDiscount"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="List Price"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="ListPrice"/>
+        <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="type" Value="java.lang.Double"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="PreApprovedDiscount" Type="java.lang.Double">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="nextSibling" Value="RequestedDiscount"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Pre Approved Discount"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="PreApprovedDiscount"/>
+        <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="type" Value="java.lang.Double"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="RequestedDiscount" Type="java.lang.Double">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="nextSibling" Value="RestrictedItem"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Requested Discount"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="RequestedDiscount"/>
+        <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="type" Value="java.lang.Double"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="RestrictedItem" Type="java.lang.Boolean">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="nextSibling" Value="ControlledAvailability"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Restricted Item"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="RestrictedItem"/>
+        <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="type" Value="java.lang.Boolean"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="ControlledAvailability" Type="java.lang.Boolean">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="nextSibling" Value="Approval"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Controlled Availability"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="ControlledAvailability"/>
+        <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="type" Value="java.lang.Boolean"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <AccessorAttribute id="Approval" IsCollection="true" BeanClass="EnterQuoteUI_EnterQuoteDetails.ApprovalType"
+                     CollectionBeanClass="EnterQuoteUI_EnterQuoteDetails.ApprovalType_Approval_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="0"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="Approval"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="Approval"/>
+      <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

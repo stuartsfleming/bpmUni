@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93" id="QuoteRequestType" Package="EnterQuoteUI_EnterQuoteDetails"
+          BeanClass="EnterQuoteUI_EnterQuoteDetails.QuoteRequestType" isJavaBased="false">
+  <Attribute Name="QuoteRequestStatus" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="nextSibling" Value="RecommendedDiscount"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Quote Request Status"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="QuoteRequestStatus"/>
+        <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <AccessorAttribute id="Summary" IsCollection="true" BeanClass="EnterQuoteUI_EnterQuoteDetails.QuoteSummaryType"
+                     CollectionBeanClass="EnterQuoteUI_EnterQuoteDetails.QuoteSummaryType_Summary_Operations">
+    <Properties>
+      <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+      <Property Name="nextSibling" Value="ProductItem"/>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="Summary"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="Summary"/>
+      <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="ProductItem" IsCollection="true" BeanClass="EnterQuoteUI_EnterQuoteDetails.ProductItemType"
+                     CollectionBeanClass="EnterQuoteUI_EnterQuoteDetails.ProductItemType_ProductItem_Operations">
+    <Properties>
+      <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+      <Property Name="nextSibling" Value="LicenseTerm"/>
+      <Property Name="minOccurs" Value="0"/>
+      <Property Name="maxOccurs" Value="2147483640"/>
+      <Property Name="LABEL" Value="Product Item"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="ProductItem"/>
+      <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="LicenseTerm" IsCollection="true" BeanClass="EnterQuoteUI_EnterQuoteDetails.LicenseTermType"
+                     CollectionBeanClass="EnterQuoteUI_EnterQuoteDetails.LicenseTermType_LicenseTerm_Operations">
+    <Properties>
+      <Property Name="nextSiblingNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+      <Property Name="nextSibling" Value="QuoteRequestStatus"/>
+      <Property Name="minOccurs" Value="0"/>
+      <Property Name="maxOccurs" Value="2147483640"/>
+      <Property Name="LABEL" Value="License Term"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="LicenseTerm"/>
+      <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="RecommendedDiscount" IsCollection="true" BeanClass="EnterQuoteUI_EnterQuoteDetails.DiscountRecommendationType"
+                     CollectionBeanClass="EnterQuoteUI_EnterQuoteDetails.DiscountRecommendationType_RecommendedDiscount_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="0"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="Recommended Discount"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="RecommendedDiscount"/>
+      <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

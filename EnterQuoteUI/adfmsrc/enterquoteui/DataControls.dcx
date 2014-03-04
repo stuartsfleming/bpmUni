@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DataControlConfigs xmlns="http://xmlns.oracle.com/adfm/configuration" version="11.1.1.64.93" id="DataControls" Package="enterquoteui">
+  <AdapterDataControl id="EnterQuoteUI_EnterQuoteDetails" FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.bpel.services.datacontrol.XSDDataControlDefinition" SupportsTransactions="true" SupportsSortCollection="false" SupportsResetState="false"
+                      SupportsRangesize="false" SupportsFindMode="false" SupportsUpdates="false" Definition="EnterQuoteUI_EnterQuoteDetails"
+                      BeanClass="EnterQuoteUI_EnterQuoteDetails" xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <XSDDataControl xmlns="http://xmlns.oracle.com/bpel/workflow/task" SchemaLocation="file:/C:/JDeveloper/mywork/bpmUni/SSFBpmUni/xsd/EnterQuoteDetailsWorkflowTask.xsd"
+                      RootElement="task" rootelementnamespace="http://xmlns.oracle.com/bpel/workflow/task" taskLoc="../SSFBpmUni/EnterQuoteDetails.task" InitiationTask="true"
+                      DocumentStoreConfiguration="false"/>
+    </Source>
+  </AdapterDataControl>
+</DataControlConfigs>

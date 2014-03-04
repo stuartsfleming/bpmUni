@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="11.1.1.64.93" id="DataBindings" SeparateXMLFiles="false" Package="enterquoteui" ClientType="Generic">
+  <pageMap>
+    <page path="/taskDetails1.jspx" usageId="enterquoteui_taskDetails1PageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="enterquoteui_taskDetails1PageDef" path="enterquoteui.pageDefs.taskDetails1PageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="EnterQuoteUI_EnterQuoteDetails" path="enterquoteui.EnterQuoteUI_EnterQuoteDetails"/>
+  </dataControlUsages>
+</Application>
