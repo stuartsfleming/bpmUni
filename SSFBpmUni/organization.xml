@@ -6,6 +6,10 @@
     <ns1:applicationRoles>
         <ns1:applicationRole id="SSFBpmUni.ProcessOwner" isProcessRole="false">
             <ns5:name>SSFBpmUni.Process Owner</ns5:name>
+            <ns1:member type="APPROLE">
+                <ns1:applicationContext>OracleBPMProcessRolesApp</ns1:applicationContext>
+                <ns1:name>BPMUniProcessOwner</ns1:name>
+            </ns1:member>
             <ns1:processRole id="ProcessOwner" name="Process Owner"/>
         </ns1:applicationRole>
         <ns1:applicationRole id="SSFBpmUni.SalesRep" isProcessRole="true">
@@ -20,7 +24,7 @@
             <ns5:name>SSFBpmUni.BusinessPractices</ns5:name>
             <ns1:member type="APPROLE">
                 <ns1:applicationContext>OracleBPMProcessRolesApp</ns1:applicationContext>
-                <ns1:name>BPMAppSalesQuoteBusPractReview</ns1:name>
+                <ns1:name>BpmUniBusReview</ns1:name>
             </ns1:member>
             <ns1:processRole id="BusinessPractices" name="BusinessPractices"/>
         </ns1:applicationRole>
@@ -28,7 +32,7 @@
             <ns5:name>SSFBpmUni.Approvers</ns5:name>
             <ns1:member type="APPROLE">
                 <ns1:applicationContext>OracleBPMProcessRolesApp</ns1:applicationContext>
-                <ns1:name>BPMAppSalesQuoteApproval</ns1:name>
+                <ns1:name>BpmUniApproveDeal</ns1:name>
             </ns1:member>
             <ns1:processRole id="Approvers" name="Approvers"/>
         </ns1:applicationRole>
@@ -36,7 +40,7 @@
             <ns5:name>SSFBpmUni.Contract</ns5:name>
             <ns1:member type="APPROLE">
                 <ns1:applicationContext>OracleBPMProcessRolesApp</ns1:applicationContext>
-                <ns1:name>BPMAppSalesQuoteContract</ns1:name>
+                <ns1:name>BPMUniContractApproval</ns1:name>
             </ns1:member>
             <ns1:processRole id="Contract" name="Contract"/>
         </ns1:applicationRole>

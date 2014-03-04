@@ -15,46 +15,6 @@
       <loc/>
       <line/>
       <col/>
-      <file>/processes/SalesQuote.bpmn</file>
-      <name>/processes/SalesQuote.bpmn</name>
-      <fix/>
-      <msg>Node 'Determine Approvals' has no implementation defined</msg>
-   </Fault>
-   <Fault>
-      <severity>warning</severity>
-      <loc/>
-      <line/>
-      <col/>
-      <file>/processes/SalesQuote.bpmn</file>
-      <name>/processes/SalesQuote.bpmn</name>
-      <fix/>
-      <msg>The condition in Sequence Flow (Is Business Practices Review Required To Business Practices Review) is empty.</msg>
-   </Fault>
-   <Fault>
-      <severity>warning</severity>
-      <loc/>
-      <line/>
-      <col/>
-      <file>/processes/SalesQuote.bpmn</file>
-      <name>/processes/SalesQuote.bpmn</name>
-      <fix/>
-      <msg>The condition in Sequence Flow (Exclusive Gateway1 To Enter Quote Details) is empty.</msg>
-   </Fault>
-   <Fault>
-      <severity>warning</severity>
-      <loc/>
-      <line/>
-      <col/>
-      <file>/processes/SalesQuote.bpmn</file>
-      <name>/processes/SalesQuote.bpmn</name>
-      <fix/>
-      <msg>The condition in Sequence Flow (Business Practices Outcome To Enter Quote Details) is empty.</msg>
-   </Fault>
-   <Fault>
-      <severity>warning</severity>
-      <loc/>
-      <line/>
-      <col/>
       <file>ApproveDeal.task</file>
       <name>ApproveDeal.task</name>
       <fix/>
