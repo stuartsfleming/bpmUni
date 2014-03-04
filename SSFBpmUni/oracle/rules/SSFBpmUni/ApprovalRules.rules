@@ -4899,7 +4899,7 @@
             </Bucket>
             <CalendarForm>Date</CalendarForm>
             <Excluded>false</Excluded>
-            <ValidationUpdateNumber>4</ValidationUpdateNumber>
+            <ValidationUpdateNumber>47</ValidationUpdateNumber>
         </BucketSet>
         <BucketSet id="G}-4fa61623:14485880526:-7bf1">
             <Name>LicenseTermTypeType</Name>
@@ -5155,8 +5155,8 @@
             <ValidationUpdateNumber>4</ValidationUpdateNumber>
         </BucketSet>
         <BucketSet id="G}68d0cef3:14488d90874:-7c32">
-            <Name>Bucketset3</Name>
-            <Alias>Bucketset3</Alias>
+            <Name>DiscountBuckets</Name>
+            <Alias>DiscountBuckets</Alias>
             <Visible>true</Visible>
             <CreationUpdateNumber>33</CreationUpdateNumber>
             <IDofType>J}double</IDofType>
@@ -5227,7 +5227,82 @@
             </Bucket>
             <CalendarForm>Date</CalendarForm>
             <Excluded>false</Excluded>
-            <ValidationUpdateNumber>45</ValidationUpdateNumber>
+            <ValidationUpdateNumber>57</ValidationUpdateNumber>
+        </BucketSet>
+        <BucketSet id="G}68d0cef3:14488d90874:-7c28">
+            <Name>RevenueBuckets</Name>
+            <Alias>RevenueBuckets</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>46</CreationUpdateNumber>
+            <IDofType>J}double</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>double</Type>
+            <Form>Range</Form>
+            <Bucket id="G}68d0cef3:14488d90874:-7c27">
+                <Name>&lt;150000</Name>
+                <Alias>&lt;150000</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>46</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>true</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}552">
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c24">
+                <Name>[150000..550000)</Name>
+                <Alias>[150000..550000)</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>52</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}567">
+                    <Value>150000</Value>
+                    <ResolvedValue>150000</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c25">
+                <Name>[550000..1500000)</Name>
+                <Alias>[550000..1500000)</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>51</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}564">
+                    <Value>550000</Value>
+                    <ResolvedValue>550000</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c26">
+                <Name>&gt;=1500000</Name>
+                <Alias>&gt;=1500000</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>50</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}561">
+                    <Value>1500000</Value>
+                    <ResolvedValue>1500000</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <CalendarForm>Date</CalendarForm>
+            <Excluded>false</Excluded>
+            <ValidationUpdateNumber>58</ValidationUpdateNumber>
         </BucketSet>
         <SupportsXPathEnabled>false</SupportsXPathEnabled>
         <DecisionFunction id="G}-4fa61623:14485880526:-7bd7">
@@ -5273,14 +5348,14 @@
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>45</UpdateNumber>
-        <ValidationUpdateNumber>45</ValidationUpdateNumber>
+        <UpdateNumber>61</UpdateNumber>
+        <ValidationUpdateNumber>61</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
     <RuleSet id="G}-4fa61623:14485880526:-7bd8">
         <Name>Ruleset1</Name>
         <Alias>Ruleset1</Alias>
-        <ValidationUpdateNumber>18</ValidationUpdateNumber>
+        <ValidationUpdateNumber>-1</ValidationUpdateNumber>
         <Customizable>true</Customizable>
         <Active>true</Active>
         <CalendarForm>DateTime</CalendarForm>
@@ -5374,10 +5449,234 @@
                 </Expression>
             </Action>
         </Rule>
+        <RuleSheet id="G}68d0cef3:14488d90874:-7c13">
+            <Name>ApprovalMatrix</Name>
+            <Alias>ApprovalMatrix</Alias>
+            <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+            <Priority>medium</Priority>
+            <Customizable>true</Customizable>
+            <Active>true</Active>
+            <CalendarForm>DateTime</CalendarForm>
+            <Pattern id="L}669">
+                <Form>Fact Type</Form>
+                <FactType>QuoteSummaryType</FactType>
+                <IDofFactType>J}com.mycompany.ns.salesquote.QuoteSummaryType</IDofFactType>
+                <Connective>&amp;&amp;</Connective>
+                <TestForm>Simple</TestForm>
+                <Expression id="L}670">
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Operator>(for each case where)</Operator>
+                <FactPath>QuoteSummaryType</FactPath>
+                <FactPathIDs>L}669</FactPathIDs>
+            </Pattern>
+            <ShowPatterns>false</ShowPatterns>
+            <TreeMode>false</TreeMode>
+            <Visible>true</Visible>
+            <Logical>false</Logical>
+            <Dimension id="L}657">
+                <Value>QuoteSummaryType.effectiveDiscount &lt;= preApprovedDiscount</Value>
+                <ResolvedValue>`L}669`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{effectiveDiscount}` &lt;= `G}68d0cef3:14488d90874:-7c36`</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>false</Customizable>
+                <IDofSharedBucketSet>B}bbs</IDofSharedBucketSet>
+                <DimensionNode id="L}658">
+                    <BucketIDTable>B}bbtrue</BucketIDTable>
+                    <Values>true</Values>
+                    <ParentDimensionNode>B}nil</ParentDimensionNode>
+                    <ChildDimensionNodes>L}676</ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}757">
+                    <BucketIDTable>B}bbfalse</BucketIDTable>
+                    <Values>false</Values>
+                    <ParentDimensionNode>B}nil</ParentDimensionNode>
+                    <ChildDimensionNodes>L}719 L}738 L}758</ChildDimensionNodes>
+                </DimensionNode>
+                <PrivateBucketSet id="G}68d0cef3:14488d90874:-7c0d">
+                    <Visible>true</Visible>
+                    <CreationUpdateNumber>79</CreationUpdateNumber>
+                    <IDofType>B}nil</IDofType>
+                    <ListContentID>B}nil</ListContentID>
+                    <Form>Default</Form>
+                    <Bucket id="G}68d0cef3:14488d90874:-7c0c">
+                        <Name>otherwise</Name>
+                        <Alias>otherwise</Alias>
+                        <Visible>true</Visible>
+                        <CreationUpdateNumber>79</CreationUpdateNumber>
+                        <Inclusive>true</Inclusive>
+                        <Otherwise>true</Otherwise>
+                        <Excluded>false</Excluded>
+                        <Expression id="L}660">
+                            <IsConstant>true</IsConstant>
+                            <ParameterID>B}nil</ParameterID>
+                            <Customizable>false</Customizable>
+                        </Expression>
+                    </Bucket>
+                    <CalendarForm>Date</CalendarForm>
+                    <Excluded>false</Excluded>
+                    <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+                </PrivateBucketSet>
+                <SharedBucketSet>boolean</SharedBucketSet>
+            </Dimension>
+            <Dimension id="L}675">
+                <Value>QuoteSummaryType.effectiveDiscount</Value>
+                <ResolvedValue>`L}669`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{effectiveDiscount}`</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>false</Customizable>
+                <IDofSharedBucketSet>G}68d0cef3:14488d90874:-7c32</IDofSharedBucketSet>
+                <DimensionNode id="L}676">
+                    <BucketIDTable></BucketIDTable>
+                    <Values>-</Values>
+                    <ParentDimensionNode>L}658</ParentDimensionNode>
+                    <ChildDimensionNodes>L}683</ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}719">
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c31 G}68d0cef3:14488d90874:-7c30</BucketIDTable>
+                    <Values>&lt;0.3 [0.3..0.6)</Values>
+                    <ParentDimensionNode>L}757</ParentDimensionNode>
+                    <ChildDimensionNodes>L}720</ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}738">
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c2f</BucketIDTable>
+                    <Values>[0.6..0.9)</Values>
+                    <ParentDimensionNode>L}757</ParentDimensionNode>
+                    <ChildDimensionNodes>L}739</ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}758">
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c2e</BucketIDTable>
+                    <Values>&gt;=0.9</Values>
+                    <ParentDimensionNode>L}757</ParentDimensionNode>
+                    <ChildDimensionNodes>L}759</ChildDimensionNodes>
+                </DimensionNode>
+                <PrivateBucketSet id="G}68d0cef3:14488d90874:-7c0a">
+                    <Visible>true</Visible>
+                    <CreationUpdateNumber>83</CreationUpdateNumber>
+                    <IDofType>J}double</IDofType>
+                    <ListContentID>B}nil</ListContentID>
+                    <Type>double</Type>
+                    <Form>LOV</Form>
+                    <Bucket id="G}68d0cef3:14488d90874:-7c09">
+                        <Name>otherwise</Name>
+                        <Alias>otherwise</Alias>
+                        <Visible>true</Visible>
+                        <CreationUpdateNumber>83</CreationUpdateNumber>
+                        <Inclusive>true</Inclusive>
+                        <Otherwise>true</Otherwise>
+                        <Excluded>false</Excluded>
+                        <Expression id="L}677">
+                            <IsConstant>true</IsConstant>
+                            <ParameterID>B}nil</ParameterID>
+                            <Customizable>false</Customizable>
+                        </Expression>
+                    </Bucket>
+                    <CalendarForm>Date</CalendarForm>
+                    <Excluded>false</Excluded>
+                    <ValidationUpdateNumber>88</ValidationUpdateNumber>
+                </PrivateBucketSet>
+                <SharedBucketSet>DiscountBuckets</SharedBucketSet>
+            </Dimension>
+            <Dimension id="L}682">
+                <Value>QuoteSummaryType.totalNetRevenue</Value>
+                <ResolvedValue>`L}669`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{totalNetRevenue}`</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>false</Customizable>
+                <IDofSharedBucketSet>G}68d0cef3:14488d90874:-7c28</IDofSharedBucketSet>
+                <DimensionNode id="L}683">
+                    <BucketIDTable></BucketIDTable>
+                    <Values>-</Values>
+                    <ParentDimensionNode>L}676</ParentDimensionNode>
+                    <ChildDimensionNodes></ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}720">
+                    <BucketIDTable></BucketIDTable>
+                    <Values>-</Values>
+                    <ParentDimensionNode>L}719</ParentDimensionNode>
+                    <ChildDimensionNodes></ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}739">
+                    <BucketIDTable></BucketIDTable>
+                    <Values>-</Values>
+                    <ParentDimensionNode>L}738</ParentDimensionNode>
+                    <ChildDimensionNodes></ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}759">
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c25</BucketIDTable>
+                    <Values>[550000..1500000)</Values>
+                    <ParentDimensionNode>L}758</ParentDimensionNode>
+                    <ChildDimensionNodes></ChildDimensionNodes>
+                </DimensionNode>
+                <PrivateBucketSet id="G}68d0cef3:14488d90874:-7c08">
+                    <Visible>true</Visible>
+                    <CreationUpdateNumber>84</CreationUpdateNumber>
+                    <IDofType>J}double</IDofType>
+                    <ListContentID>B}nil</ListContentID>
+                    <Type>double</Type>
+                    <Form>LOV</Form>
+                    <Bucket id="G}68d0cef3:14488d90874:-7c07">
+                        <Name>otherwise</Name>
+                        <Alias>otherwise</Alias>
+                        <Visible>true</Visible>
+                        <CreationUpdateNumber>84</CreationUpdateNumber>
+                        <Inclusive>true</Inclusive>
+                        <Otherwise>true</Otherwise>
+                        <Excluded>false</Excluded>
+                        <Expression id="L}684">
+                            <IsConstant>true</IsConstant>
+                            <ParameterID>B}nil</ParameterID>
+                            <Customizable>false</Customizable>
+                        </Expression>
+                    </Bucket>
+                    <CalendarForm>Date</CalendarForm>
+                    <Excluded>false</Excluded>
+                    <ValidationUpdateNumber>87</ValidationUpdateNumber>
+                </PrivateBucketSet>
+                <SharedBucketSet>RevenueBuckets</SharedBucketSet>
+            </Dimension>
+            <DTRule id="L}659">
+                <Override></Override>
+                <RunBefore></RunBefore>
+                <NoConflict></NoConflict>
+                <OverriddenBy></OverriddenBy>
+                <RunAfter></RunAfter>
+                <CreationUpdateNumber>79</CreationUpdateNumber>
+            </DTRule>
+            <DTRule id="L}721">
+                <Override></Override>
+                <RunBefore></RunBefore>
+                <NoConflict></NoConflict>
+                <OverriddenBy></OverriddenBy>
+                <RunAfter></RunAfter>
+                <CreationUpdateNumber>95</CreationUpdateNumber>
+            </DTRule>
+            <DTRule id="L}740">
+                <Override></Override>
+                <RunBefore></RunBefore>
+                <NoConflict></NoConflict>
+                <OverriddenBy></OverriddenBy>
+                <RunAfter></RunAfter>
+                <CreationUpdateNumber>99</CreationUpdateNumber>
+            </DTRule>
+            <DTRule id="L}760">
+                <Override></Override>
+                <RunBefore></RunBefore>
+                <NoConflict></NoConflict>
+                <OverriddenBy></OverriddenBy>
+                <RunAfter></RunAfter>
+                <CreationUpdateNumber>105</CreationUpdateNumber>
+            </DTRule>
+            <AllowGaps>true</AllowGaps>
+            <ConflictPolicy>manual</ConflictPolicy>
+            <OrderRulesByBucket>true</OrderRulesByBucket>
+        </RuleSheet>
         <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
-    <ValidationUpdateNumber>45</ValidationUpdateNumber>
-    <UpdateNumber>45</UpdateNumber>
+    <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+    <UpdateNumber>134</UpdateNumber>
     <ResourceBundle>ApprovalRulesTranslations</ResourceBundle>
 </RuleDictionary>
