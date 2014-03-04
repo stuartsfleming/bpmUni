@@ -1,50 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <?oracleBPM version="11.1.1.7.0.0.8" fileRevision="20090820"?>
-<ns3:organization xmlns:ns2="http://xmlns.oracle.com/bpel/workflow/taskQuery" xmlns="http://xmlns.oracle.com/bpel/workflow/task" xmlns:ns4="http://xmlns.oracle.com/bpm/lpg/peopleQuery" xmlns:ns3="http://xmlns.oracle.com/bpm/organization" xmlns:ns5="http://xmlns.oracle.com/bpm/identity">
-    <ns3:updateExistingObjects>false</ns3:updateExistingObjects>
-    <ns3:organizationalUnits/>
-    <ns3:applicationRoles>
-        <ns3:applicationRole id="SSFBpmUni.ProcessOwner" isProcessRole="false">
+<ns1:organization xmlns:ns2="http://xmlns.oracle.com/bpm/lpg/peopleQuery" xmlns:ns1="http://xmlns.oracle.com/bpm/organization" xmlns:ns4="http://xmlns.oracle.com/bpel/workflow/task" xmlns:ns3="http://xmlns.oracle.com/bpel/workflow/taskQuery" xmlns:ns5="http://xmlns.oracle.com/bpm/identity">
+    <ns1:updateExistingObjects>false</ns1:updateExistingObjects>
+    <ns1:organizationalUnits/>
+    <ns1:applicationRoles>
+        <ns1:applicationRole id="SSFBpmUni.ProcessOwner" isProcessRole="false">
             <ns5:name>SSFBpmUni.Process Owner</ns5:name>
-            <ns3:member type="USER">
-                <ns3:name>stuart</ns3:name>
-            </ns3:member>
-            <ns3:processRole id="ProcessOwner" name="Process Owner"/>
-        </ns3:applicationRole>
-        <ns3:applicationRole id="SSFBpmUni.SalesRep" isProcessRole="true">
+            <ns1:processRole id="ProcessOwner" name="Process Owner"/>
+        </ns1:applicationRole>
+        <ns1:applicationRole id="SSFBpmUni.SalesRep" isProcessRole="true">
             <ns5:name>SSFBpmUni.SalesRep</ns5:name>
-            <ns3:member type="USER">
-                <ns3:name>stuart</ns3:name>
-            </ns3:member>
-            <ns3:processRole id="SalesRep" name="SalesRep"/>
-        </ns3:applicationRole>
-        <ns3:applicationRole id="SSFBpmUni.BusinessPractices" isProcessRole="true">
+            <ns1:member type="APPROLE">
+                <ns1:applicationContext>OracleBPMProcessRolesApp</ns1:applicationContext>
+                <ns1:name>BpmUniSalesRep</ns1:name>
+            </ns1:member>
+            <ns1:processRole id="SalesRep" name="SalesRep"/>
+        </ns1:applicationRole>
+        <ns1:applicationRole id="SSFBpmUni.BusinessPractices" isProcessRole="true">
             <ns5:name>SSFBpmUni.BusinessPractices</ns5:name>
-            <ns3:member type="APPROLE">
-                <ns3:applicationContext>OracleBPMProcessRolesApp</ns3:applicationContext>
-                <ns3:name>BPMAppSalesQuoteBusPractReview</ns3:name>
-            </ns3:member>
-            <ns3:processRole id="BusinessPractices" name="BusinessPractices"/>
-        </ns3:applicationRole>
-        <ns3:applicationRole id="SSFBpmUni.Approvers" isProcessRole="true">
+            <ns1:member type="APPROLE">
+                <ns1:applicationContext>OracleBPMProcessRolesApp</ns1:applicationContext>
+                <ns1:name>BPMAppSalesQuoteBusPractReview</ns1:name>
+            </ns1:member>
+            <ns1:processRole id="BusinessPractices" name="BusinessPractices"/>
+        </ns1:applicationRole>
+        <ns1:applicationRole id="SSFBpmUni.Approvers" isProcessRole="true">
             <ns5:name>SSFBpmUni.Approvers</ns5:name>
-            <ns3:member type="APPROLE">
-                <ns3:applicationContext>OracleBPMProcessRolesApp</ns3:applicationContext>
-                <ns3:name>BPMAppSalesQuoteApproval</ns3:name>
-            </ns3:member>
-            <ns3:processRole id="Approvers" name="Approvers"/>
-        </ns3:applicationRole>
-        <ns3:applicationRole id="SSFBpmUni.Contract" isProcessRole="true">
+            <ns1:member type="APPROLE">
+                <ns1:applicationContext>OracleBPMProcessRolesApp</ns1:applicationContext>
+                <ns1:name>BPMAppSalesQuoteApproval</ns1:name>
+            </ns1:member>
+            <ns1:processRole id="Approvers" name="Approvers"/>
+        </ns1:applicationRole>
+        <ns1:applicationRole id="SSFBpmUni.Contract" isProcessRole="true">
             <ns5:name>SSFBpmUni.Contract</ns5:name>
-            <ns3:member type="APPROLE">
-                <ns3:applicationContext>OracleBPMProcessRolesApp</ns3:applicationContext>
-                <ns3:name>BPMAppSalesQuoteContract</ns3:name>
-            </ns3:member>
-            <ns3:processRole id="Contract" name="Contract"/>
-        </ns3:applicationRole>
-    </ns3:applicationRoles>
-    <ns3:applicationRoleOrgUnitCalendarAssociations/>
-    <ns3:participantPropertiesList/>
-    <ns3:holidayRules/>
-    <ns3:calendarRules/>
-</ns3:organization>
+            <ns1:member type="APPROLE">
+                <ns1:applicationContext>OracleBPMProcessRolesApp</ns1:applicationContext>
+                <ns1:name>BPMAppSalesQuoteContract</ns1:name>
+            </ns1:member>
+            <ns1:processRole id="Contract" name="Contract"/>
+        </ns1:applicationRole>
+    </ns1:applicationRoles>
+    <ns1:applicationRoleOrgUnitCalendarAssociations/>
+    <ns1:participantPropertiesList/>
+    <ns1:holidayRules/>
+    <ns1:calendarRules/>
+</ns1:organization>
