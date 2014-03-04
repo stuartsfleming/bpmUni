@@ -6,6 +6,66 @@
     <Version>11.1.1.0.0</Version>
     <DataModel id="L}1">
         <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Variable id="G}68d0cef3:14488d90874:-7c36">
+            <Name>preApprovedDiscount</Name>
+            <Alias>preApprovedDiscount</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>19</CreationUpdateNumber>
+            <IDofType>J}double</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>double</Type>
+            <IDofBucketSet>B}nil</IDofBucketSet>
+            <Expression id="L}505">
+                <Value>.3</Value>
+                <ResolvedValue>.3</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>true</Customizable>
+            </Expression>
+            <Final>true</Final>
+            <System>false</System>
+            <ValidationUpdateNumber>22</ValidationUpdateNumber>
+        </Variable>
+        <Variable id="G}68d0cef3:14488d90874:-7c35">
+            <Name>tier2ApproversBase</Name>
+            <Alias>tier2Approvers-base</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>23</CreationUpdateNumber>
+            <IDofType>J}java.lang.String</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>String</Type>
+            <IDofBucketSet>B}nil</IDofBucketSet>
+            <Expression id="L}515">
+                <Value>&quot;doug&quot;</Value>
+                <ResolvedValue>&quot;doug&quot;</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>true</Customizable>
+            </Expression>
+            <Final>true</Final>
+            <System>false</System>
+            <ValidationUpdateNumber>26</ValidationUpdateNumber>
+        </Variable>
+        <Variable id="G}68d0cef3:14488d90874:-7c34">
+            <Name>tier2ApproversHigh</Name>
+            <Alias>tier2Approvers-high</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>27</CreationUpdateNumber>
+            <IDofType>J}java.lang.String</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>String</Type>
+            <IDofBucketSet>B}nil</IDofBucketSet>
+            <Expression id="L}524">
+                <Value>&quot;doug&quot;</Value>
+                <ResolvedValue>&quot;doug&quot;</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>true</Customizable>
+            </Expression>
+            <Final>true</Final>
+            <System>false</System>
+            <ValidationUpdateNumber>32</ValidationUpdateNumber>
+        </Variable>
         <JaxbFactType id="J}com.mycompany.ns.salesquote.QuoteRequestType">
             <Name>com.mycompany.ns.salesquote.QuoteRequestType</Name>
             <Alias>QuoteRequestType</Alias>
@@ -5138,8 +5198,8 @@
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>11</UpdateNumber>
-        <ValidationUpdateNumber>16</ValidationUpdateNumber>
+        <UpdateNumber>32</UpdateNumber>
+        <ValidationUpdateNumber>32</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
     <RuleSet id="G}-4fa61623:14485880526:-7bd8">
@@ -5242,7 +5302,7 @@
         <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
-    <ValidationUpdateNumber>18</ValidationUpdateNumber>
-    <UpdateNumber>18</UpdateNumber>
+    <ValidationUpdateNumber>32</ValidationUpdateNumber>
+    <UpdateNumber>32</UpdateNumber>
     <ResourceBundle>ApprovalRulesTranslations</ResourceBundle>
 </RuleDictionary>
