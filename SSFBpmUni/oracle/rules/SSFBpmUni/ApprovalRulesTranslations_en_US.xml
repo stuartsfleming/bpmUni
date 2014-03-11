@@ -1,2 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<properties/>
+<properties>
+   <entry key="AG}-4fa61623:14485880526:-7bd1">Approvals</entry>
+   <entry key="AG}68d0cef3:14488d90874:-7c28">RevenueBuckets</entry>
+   <entry key="AG}68d0cef3:14488d90874:-7c35">tier2Approvers-base</entry>
+   <entry key="AG}68d0cef3:14488d90874:-7c36">preApprovedDiscount</entry>
+   <entry key="AG}-4fa61623:14485880526:-7bd8">Ruleset</entry>
+   <entry key="AG}68d0cef3:14488d90874:-7c34">tier2Approvers-high</entry>
+   <entry key="AG}68d0cef3:14488d90874:-7c32">DiscountBuckets</entry>
+</properties>
