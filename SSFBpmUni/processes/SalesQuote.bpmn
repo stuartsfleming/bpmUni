@@ -1375,5 +1375,24 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </dataObject>
+        <artifact xsi:type="tTextAnnotation" id="textAnnotation">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="922" y="157"/>
+                        <ns5:Size width="235" height="107"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:StringFeature value="" name="associatedNode"/>
+                    </ns5:FeatureSet>
+                    <ns5:Localization>
+                        <ns5:Label>
+                            <ns5:LocalizedContent language="en">Last page 70</ns5:LocalizedContent>
+                        </ns5:Label>
+                    </ns5:Localization>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <text>Last page 70</text>
+        </artifact>
     </process>
 </definitions>
