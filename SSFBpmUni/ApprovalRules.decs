@@ -18,8 +18,8 @@
             </arguments>
         </pattern>
     </decisionService>
-    <schemaInformation> 
-        <dictionary fqnPackage="SSFBpmUni" fqnName="ApprovalRules" updateNumber="18">
+    <schemaInformation>
+        <dictionary fqnPackage="SSFBpmUni" fqnName="ApprovalRules" updateNumber="138">
             <schemaBrowser>
                 <package>com.mycompany.ns.salesquote</package>
                 <namespace>http://www.mycompany.com/ns/salesquote</namespace>
