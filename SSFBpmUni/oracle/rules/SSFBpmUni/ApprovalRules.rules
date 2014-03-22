@@ -16,15 +16,15 @@
             <Type>double</Type>
             <IDofBucketSet>B}nil</IDofBucketSet>
             <Expression id="L}505">
-                <Value>.3</Value>
-                <ResolvedValue>.3</ResolvedValue>
+                <Value>.2</Value>
+                <ResolvedValue>.2</ResolvedValue>
                 <IsConstant>false</IsConstant>
                 <ParameterID>B}nil</ParameterID>
                 <Customizable>true</Customizable>
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>22</ValidationUpdateNumber>
+            <ValidationUpdateNumber>147</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}68d0cef3:14488d90874:-7c35">
             <Name>tier2ApproversBase</Name>
@@ -65,6 +65,69 @@
             <Final>true</Final>
             <System>false</System>
             <ValidationUpdateNumber>32</ValidationUpdateNumber>
+        </Variable>
+        <Variable id="G}-3f2f991f:144e6fe8f6a:-7c0c">
+            <Name>g_discount_high</Name>
+            <Alias>g_discount_high</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>170</CreationUpdateNumber>
+            <IDofType>J}double</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>double</Type>
+            <IDofBucketSet>G}68d0cef3:14488d90874:-7c32</IDofBucketSet>
+            <BucketSet>DiscountBuckets</BucketSet>
+            <Expression id="L}809">
+                <Value>.9</Value>
+                <ResolvedValue>.9</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>true</Customizable>
+            </Expression>
+            <Final>true</Final>
+            <System>false</System>
+            <ValidationUpdateNumber>184</ValidationUpdateNumber>
+        </Variable>
+        <Variable id="G}-3f2f991f:144e6fe8f6a:-7c0a">
+            <Name>g_discount_med</Name>
+            <Alias>g_discount_med</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>174</CreationUpdateNumber>
+            <IDofType>J}double</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>double</Type>
+            <IDofBucketSet>G}68d0cef3:14488d90874:-7c32</IDofBucketSet>
+            <BucketSet>DiscountBuckets</BucketSet>
+            <Expression id="L}818">
+                <Value>.6</Value>
+                <ResolvedValue>.6</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>true</Customizable>
+            </Expression>
+            <Final>true</Final>
+            <System>false</System>
+            <ValidationUpdateNumber>185</ValidationUpdateNumber>
+        </Variable>
+        <Variable id="G}-3f2f991f:144e6fe8f6a:-7c09">
+            <Name>g_discount_low</Name>
+            <Alias>g_discount_low</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>179</CreationUpdateNumber>
+            <IDofType>J}double</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>double</Type>
+            <IDofBucketSet>G}68d0cef3:14488d90874:-7c32</IDofBucketSet>
+            <BucketSet>DiscountBuckets</BucketSet>
+            <Expression id="L}829">
+                <Value>.2</Value>
+                <ResolvedValue>.2</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>true</Customizable>
+            </Expression>
+            <Final>true</Final>
+            <System>false</System>
+            <ValidationUpdateNumber>195</ValidationUpdateNumber>
         </Variable>
         <JaxbFactType id="J}com.mycompany.ns.salesquote.QuoteRequestType">
             <Name>com.mycompany.ns.salesquote.QuoteRequestType</Name>
@@ -5164,8 +5227,8 @@
             <Type>double</Type>
             <Form>Range</Form>
             <Bucket id="G}68d0cef3:14488d90874:-7c31">
-                <Name>&lt;0.3</Name>
-                <Alias>&lt;0.3</Alias>
+                <Name>&lt;.3</Name>
+                <Alias>&lt;.3</Alias>
                 <Visible>true</Visible>
                 <CreationUpdateNumber>33</CreationUpdateNumber>
                 <Inclusive>true</Inclusive>
@@ -5178,48 +5241,48 @@
                 </Expression>
             </Bucket>
             <Bucket id="G}68d0cef3:14488d90874:-7c30">
-                <Name>[0.3..0.6)</Name>
-                <Alias>[0.3..0.6)</Alias>
+                <Name>[.3...6)</Name>
+                <Alias>[.3...6)</Alias>
                 <Visible>true</Visible>
                 <CreationUpdateNumber>35</CreationUpdateNumber>
                 <Inclusive>true</Inclusive>
                 <Otherwise>false</Otherwise>
                 <Excluded>false</Excluded>
                 <Expression id="L}542">
-                    <Value>0.3</Value>
-                    <ResolvedValue>0.3</ResolvedValue>
-                    <IsConstant>true</IsConstant>
-                    <ParameterID>B}nil</ParameterID>
-                    <Customizable>false</Customizable>
-                </Expression>
-            </Bucket>
-            <Bucket id="G}68d0cef3:14488d90874:-7c2f">
-                <Name>[0.6..0.9)</Name>
-                <Alias>[0.6..0.9)</Alias>
-                <Visible>true</Visible>
-                <CreationUpdateNumber>36</CreationUpdateNumber>
-                <Inclusive>true</Inclusive>
-                <Otherwise>false</Otherwise>
-                <Excluded>false</Excluded>
-                <Expression id="L}545">
-                    <Value>0.6</Value>
-                    <ResolvedValue>0.6</ResolvedValue>
+                    <Value>.3</Value>
+                    <ResolvedValue>.3</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
             <Bucket id="G}68d0cef3:14488d90874:-7c2e">
-                <Name>&gt;=0.9</Name>
-                <Alias>&gt;=0.9</Alias>
+                <Name>[.6...9)</Name>
+                <Alias>[.6...9)</Alias>
                 <Visible>true</Visible>
                 <CreationUpdateNumber>37</CreationUpdateNumber>
                 <Inclusive>true</Inclusive>
                 <Otherwise>false</Otherwise>
                 <Excluded>false</Excluded>
                 <Expression id="L}548">
-                    <Value>0.9</Value>
-                    <ResolvedValue>0.9</ResolvedValue>
+                    <Value>.6</Value>
+                    <ResolvedValue>.6</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c2f">
+                <Name>&gt;=.9</Name>
+                <Alias>&gt;=.9</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>36</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}545">
+                    <Value>.9</Value>
+                    <ResolvedValue>.9</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
@@ -5227,7 +5290,7 @@
             </Bucket>
             <CalendarForm>Date</CalendarForm>
             <Excluded>false</Excluded>
-            <ValidationUpdateNumber>57</ValidationUpdateNumber>
+            <ValidationUpdateNumber>198</ValidationUpdateNumber>
         </BucketSet>
         <BucketSet id="G}68d0cef3:14488d90874:-7c28">
             <Name>RevenueBuckets</Name>
@@ -5344,28 +5407,29 @@
                 <List>false</List>
                 <Tree>false</Tree>
             </DecisionFunctionOutput>
-            <ValidationUpdateNumber>138</ValidationUpdateNumber>
+            <ValidationUpdateNumber>227</ValidationUpdateNumber>
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>137</UpdateNumber>
-        <ValidationUpdateNumber>138</ValidationUpdateNumber>
+        <UpdateNumber>275</UpdateNumber>
+        <ValidationUpdateNumber>275</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
     <RuleSet id="G}-4fa61623:14485880526:-7bd8">
         <Name>Ruleset</Name>
         <Alias>Ruleset</Alias>
-        <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+        <Description>Made inactive.  Use decision table instead.</Description>
+        <ValidationUpdateNumber>285</ValidationUpdateNumber>
         <Customizable>true</Customizable>
         <Active>true</Active>
         <CalendarForm>DateTime</CalendarForm>
         <Rule id="G}-4fa61623:14485880526:-7bd1">
             <Name>Approvals</Name>
             <Alias>Approvals</Alias>
-            <ValidationUpdateNumber>135</ValidationUpdateNumber>
+            <ValidationUpdateNumber>144</ValidationUpdateNumber>
             <Priority>medium</Priority>
             <Customizable>true</Customizable>
-            <Active>true</Active>
+            <Active>false</Active>
             <CalendarForm>DateTime</CalendarForm>
             <Pattern id="L}476">
                 <Form>Fact Type</Form>
@@ -5452,7 +5516,7 @@
         <RuleSheet id="G}68d0cef3:14488d90874:-7c13">
             <Name>ApprovalMatrix</Name>
             <Alias>ApprovalMatrix</Alias>
-            <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+            <ValidationUpdateNumber>285</ValidationUpdateNumber>
             <Priority>medium</Priority>
             <Customizable>true</Customizable>
             <Active>true</Active>
@@ -5493,7 +5557,7 @@
                     <BucketIDTable>B}bbfalse</BucketIDTable>
                     <Values>false</Values>
                     <ParentDimensionNode>B}nil</ParentDimensionNode>
-                    <ChildDimensionNodes>L}719 L}738 L}758</ChildDimensionNodes>
+                    <ChildDimensionNodes>L}719 L}738 L}758 L}942</ChildDimensionNodes>
                 </DimensionNode>
                 <PrivateBucketSet id="G}68d0cef3:14488d90874:-7c0d">
                     <Visible>true</Visible>
@@ -5536,21 +5600,27 @@
                 </DimensionNode>
                 <DimensionNode id="L}719">
                     <BucketIDTable>G}68d0cef3:14488d90874:-7c31 G}68d0cef3:14488d90874:-7c30</BucketIDTable>
-                    <Values>&lt;0.3 [0.3..0.6)</Values>
+                    <Values>&lt;.3 [.3...6)</Values>
                     <ParentDimensionNode>L}757</ParentDimensionNode>
                     <ChildDimensionNodes>L}720</ChildDimensionNodes>
                 </DimensionNode>
                 <DimensionNode id="L}738">
-                    <BucketIDTable>G}68d0cef3:14488d90874:-7c2f</BucketIDTable>
-                    <Values>[0.6..0.9)</Values>
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c2e</BucketIDTable>
+                    <Values>[.6...9)</Values>
                     <ParentDimensionNode>L}757</ParentDimensionNode>
                     <ChildDimensionNodes>L}739</ChildDimensionNodes>
                 </DimensionNode>
                 <DimensionNode id="L}758">
-                    <BucketIDTable>G}68d0cef3:14488d90874:-7c2e</BucketIDTable>
-                    <Values>&gt;=0.9</Values>
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c2e G}68d0cef3:14488d90874:-7c2f</BucketIDTable>
+                    <Values>[.6...9) &gt;=.9</Values>
                     <ParentDimensionNode>L}757</ParentDimensionNode>
                     <ChildDimensionNodes>L}759</ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}942">
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c2f</BucketIDTable>
+                    <Values>&gt;=.9</Values>
+                    <ParentDimensionNode>L}757</ParentDimensionNode>
+                    <ChildDimensionNodes>L}943</ChildDimensionNodes>
                 </DimensionNode>
                 <PrivateBucketSet id="G}68d0cef3:14488d90874:-7c0a">
                     <Visible>true</Visible>
@@ -5605,9 +5675,15 @@
                     <ChildDimensionNodes></ChildDimensionNodes>
                 </DimensionNode>
                 <DimensionNode id="L}759">
-                    <BucketIDTable>G}68d0cef3:14488d90874:-7c25</BucketIDTable>
-                    <Values>[550000..1500000)</Values>
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c25 G}68d0cef3:14488d90874:-7c26</BucketIDTable>
+                    <Values>[550000..1500000) &gt;=1500000</Values>
                     <ParentDimensionNode>L}758</ParentDimensionNode>
+                    <ChildDimensionNodes></ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}943">
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c27 G}68d0cef3:14488d90874:-7c24</BucketIDTable>
+                    <Values>&lt;150000 [150000..550000)</Values>
+                    <ParentDimensionNode>L}942</ParentDimensionNode>
                     <ChildDimensionNodes></ChildDimensionNodes>
                 </DimensionNode>
                 <PrivateBucketSet id="G}68d0cef3:14488d90874:-7c08">
@@ -5637,6 +5713,339 @@
                 </PrivateBucketSet>
                 <SharedBucketSet>RevenueBuckets</SharedBucketSet>
             </Dimension>
+            <DTAction id="L}875">
+                <Form>Assert New</Form>
+                <Target>ApprovalFlowType</Target>
+                <ResolvedTarget>`J}public com.mycompany.ns.salesquote.ApprovalFlowType()`</ResolvedTarget>
+                <Expression id="L}882">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                    <DTActionParameterName>businessPracticesReviewNeeded</DTActionParameterName>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}883">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                    <DTActionParameterName>numberOfTier3Levels</DTActionParameterName>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}884">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>selfApproved</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                    <DTActionParameterName>selfApproved</DTActionParameterName>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}885">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                    <DTActionParameterName>tier1ApprovalNeeded</DTActionParameterName>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}886">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                    <DTActionParameterName>tier2ApprovalNeeded</DTActionParameterName>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}887">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>tier2Approvers</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                    <DTActionParameterName>tier2Approvers</DTActionParameterName>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <AlwaysSelected>false</AlwaysSelected>
+                <DTActionNode id="L}876">
+                    <Selected>false</Selected>
+                    <Expression id="L}902">
+                        <Value>tier2Approvers-base</Value>
+                        <ResolvedValue>`G}68d0cef3:14488d90874:-7c35`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2Approvers</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                        <DTActionParameterName>tier2Approvers</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}903">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier2ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}904">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier1ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}905">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>selfApproved</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                        <DTActionParameterName>selfApproved</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}906">
+                        <Value>0</Value>
+                        <ResolvedValue>0</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                        <DTActionParameterName>numberOfTier3Levels</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}907">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                        <DTActionParameterName>businessPracticesReviewNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </DTActionNode>
+                <DTActionNode id="L}877">
+                    <Selected>false</Selected>
+                    <Expression id="L}908">
+                        <Value>tier2Approvers-base</Value>
+                        <ResolvedValue>`G}68d0cef3:14488d90874:-7c35`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2Approvers</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                        <DTActionParameterName>tier2Approvers</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}909">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier2ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}910">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier1ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}911">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>selfApproved</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                        <DTActionParameterName>selfApproved</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}912">
+                        <Value>1</Value>
+                        <ResolvedValue>1</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                        <DTActionParameterName>numberOfTier3Levels</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}913">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                        <DTActionParameterName>businessPracticesReviewNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </DTActionNode>
+                <DTActionNode id="L}878">
+                    <Selected>false</Selected>
+                    <Expression id="L}914">
+                        <Value>tier2Approvers-base</Value>
+                        <ResolvedValue>`G}68d0cef3:14488d90874:-7c35`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2Approvers</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                        <DTActionParameterName>tier2Approvers</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}915">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier2ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}916">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier1ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}917">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>selfApproved</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                        <DTActionParameterName>selfApproved</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}918">
+                        <Value>1</Value>
+                        <ResolvedValue>1</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                        <DTActionParameterName>numberOfTier3Levels</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}919">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                        <DTActionParameterName>businessPracticesReviewNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </DTActionNode>
+                <DTActionNode id="L}879">
+                    <Selected>false</Selected>
+                    <Expression id="L}920">
+                        <Value>tier2Approvers-high</Value>
+                        <ResolvedValue>`G}68d0cef3:14488d90874:-7c34`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2Approvers</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                        <DTActionParameterName>tier2Approvers</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}921">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier2ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}922">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier1ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}923">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>selfApproved</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                        <DTActionParameterName>selfApproved</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}924">
+                        <Value>2</Value>
+                        <ResolvedValue>2</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                        <DTActionParameterName>numberOfTier3Levels</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}925">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                        <DTActionParameterName>businessPracticesReviewNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </DTActionNode>
+                <DTActionNode id="L}945">
+                    <Selected>false</Selected>
+                    <Expression id="L}960">
+                        <Value>tier2Approvers-base</Value>
+                        <ResolvedValue>`G}68d0cef3:14488d90874:-7c35`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2Approvers</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                        <DTActionParameterName>tier2Approvers</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}961">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier2ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}962">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier1ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}963">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>selfApproved</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                        <DTActionParameterName>selfApproved</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}964">
+                        <Value>2</Value>
+                        <ResolvedValue>2</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                        <DTActionParameterName>numberOfTier3Levels</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}965">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                        <DTActionParameterName>businessPracticesReviewNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </DTActionNode>
+            </DTAction>
             <DTRule id="L}659">
                 <Override></Override>
                 <RunBefore></RunBefore>
@@ -5657,17 +6066,25 @@
                 <Override></Override>
                 <RunBefore></RunBefore>
                 <NoConflict></NoConflict>
-                <OverriddenBy></OverriddenBy>
+                <OverriddenBy>L}760</OverriddenBy>
                 <RunAfter></RunAfter>
                 <CreationUpdateNumber>99</CreationUpdateNumber>
             </DTRule>
             <DTRule id="L}760">
-                <Override></Override>
+                <Override>L}740</Override>
                 <RunBefore></RunBefore>
                 <NoConflict></NoConflict>
                 <OverriddenBy></OverriddenBy>
                 <RunAfter></RunAfter>
                 <CreationUpdateNumber>105</CreationUpdateNumber>
+            </DTRule>
+            <DTRule id="L}944">
+                <Override></Override>
+                <RunBefore></RunBefore>
+                <NoConflict></NoConflict>
+                <OverriddenBy></OverriddenBy>
+                <RunAfter></RunAfter>
+                <CreationUpdateNumber>279</CreationUpdateNumber>
             </DTRule>
             <AllowGaps>true</AllowGaps>
             <ConflictPolicy>manual</ConflictPolicy>
@@ -5676,7 +6093,7 @@
         <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
-    <ValidationUpdateNumber>-1</ValidationUpdateNumber>
-    <UpdateNumber>138</UpdateNumber>
+    <ValidationUpdateNumber>285</ValidationUpdateNumber>
+    <UpdateNumber>285</UpdateNumber>
     <ResourceBundle>ApprovalRulesTranslations</ResourceBundle>
 </RuleDictionary>

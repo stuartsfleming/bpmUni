@@ -1408,12 +1408,12 @@
                     </ns5:FeatureSet>
                     <ns5:Localization>
                         <ns5:Label>
-                            <ns5:LocalizedContent language="en">Last page 66!</ns5:LocalizedContent>
+                            <ns5:LocalizedContent language="en">Last page 70</ns5:LocalizedContent>
                         </ns5:Label>
                     </ns5:Localization>
                 </ns5:OracleExtensions>
             </extensionElements>
-            <text>Last page 66!</text>
+            <text>Last page 70</text>
         </artifact>
     </process>
 </definitions>
