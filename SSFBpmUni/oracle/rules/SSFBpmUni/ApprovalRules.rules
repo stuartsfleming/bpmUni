@@ -129,6 +129,106 @@
             <System>false</System>
             <ValidationUpdateNumber>195</ValidationUpdateNumber>
         </Variable>
+        <Function id="G}370f0a2a:144e9c33c36:-7c2f">
+            <Name>testRule</Name>
+            <Alias>testRule</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>297</CreationUpdateNumber>
+            <IDofType>J}boolean</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>boolean</Type>
+            <IDofBucketSet>B}nil</IDofBucketSet>
+            <Form>Structured</Form>
+            <Action id="L}997">
+                <Form>Assign New</Form>
+                <Target>QuoteSummaryType</Target>
+                <ResolvedTarget>`J}com.mycompany.ns.salesquote.QuoteSummaryType`</ResolvedTarget>
+                <Expression id="L}998">
+                    <Value>new QuoteSummaryType()</Value>
+                    <ResolvedValue>new `J}public com.mycompany.ns.salesquote.QuoteSummaryType()`()</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Variable>qst</Variable>
+            </Action>
+            <Action id="L}1007">
+                <Form>Assign</Form>
+                <Target>qst.effectiveDiscount</Target>
+                <ResolvedTarget>`L}997`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{effectiveDiscount}`</ResolvedTarget>
+                <Expression id="L}1008">
+                    <Value>0.2</Value>
+                    <ResolvedValue>0.2</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <Action id="L}1015">
+                <Form>Assign</Form>
+                <Target>qst.totalNetRevenue</Target>
+                <ResolvedTarget>`L}997`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{totalNetRevenue}`</ResolvedTarget>
+                <Expression id="L}1016">
+                    <Value>40000</Value>
+                    <ResolvedValue>40000</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <Action id="L}1024">
+                <Form>Assign New</Form>
+                <Target>QuoteRequestType</Target>
+                <ResolvedTarget>`J}com.mycompany.ns.salesquote.QuoteRequestType`</ResolvedTarget>
+                <Expression id="L}1025">
+                    <Value>new QuoteRequestType()</Value>
+                    <ResolvedValue>new `J}public com.mycompany.ns.salesquote.QuoteRequestType()`()</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Variable>qrt</Variable>
+            </Action>
+            <Action id="L}1038">
+                <Form>Assign</Form>
+                <Target>qrt.summary</Target>
+                <ResolvedTarget>`L}1024`.`J}com.mycompany.ns.salesquote.QuoteRequestType.{summary}`</ResolvedTarget>
+                <Expression id="L}1041">
+                    <Value>qst</Value>
+                    <ResolvedValue>`L}997`</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <Action id="L}1102">
+                <Form>Assign New</Form>
+                <Target>List</Target>
+                <ResolvedTarget>`J}java.util.List`</ResolvedTarget>
+                <Expression id="L}1105">
+                    <Value>ApprovalRules_DecisionService(qrt)</Value>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bd7`(`L}1024`)</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Variable>ListResult</Variable>
+            </Action>
+            <Action id="L}1132">
+                <Form>For</Form>
+                <Target>ApprovalFlowType</Target>
+                <ResolvedTarget>`J}com.mycompany.ns.salesquote.ApprovalFlowType`</ResolvedTarget>
+                <Expression id="L}1133">
+                    <Value>ListResult</Value>
+                    <ResolvedValue>`L}1102`</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Variable>approval</Variable>
+            </Action>
+            <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+        </Function>
         <JaxbFactType id="J}com.mycompany.ns.salesquote.QuoteRequestType">
             <Name>com.mycompany.ns.salesquote.QuoteRequestType</Name>
             <Alias>QuoteRequestType</Alias>
@@ -5407,12 +5507,12 @@
                 <List>false</List>
                 <Tree>false</Tree>
             </DecisionFunctionOutput>
-            <ValidationUpdateNumber>227</ValidationUpdateNumber>
+            <ValidationUpdateNumber>286</ValidationUpdateNumber>
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>275</UpdateNumber>
-        <ValidationUpdateNumber>275</ValidationUpdateNumber>
+        <UpdateNumber>359</UpdateNumber>
+        <ValidationUpdateNumber>-1</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
     <RuleSet id="G}-4fa61623:14485880526:-7bd8">
@@ -6093,7 +6193,7 @@
         <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
-    <ValidationUpdateNumber>285</ValidationUpdateNumber>
-    <UpdateNumber>285</UpdateNumber>
+    <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+    <UpdateNumber>359</UpdateNumber>
     <ResourceBundle>ApprovalRulesTranslations</ResourceBundle>
 </RuleDictionary>
