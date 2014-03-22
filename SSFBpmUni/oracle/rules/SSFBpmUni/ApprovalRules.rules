@@ -7,8 +7,8 @@
     <DataModel id="L}1">
         <CreationUpdateNumber>2</CreationUpdateNumber>
         <Variable id="G}68d0cef3:14488d90874:-7c36">
-            <Name>preApprovedDiscount</Name>
-            <Alias>preApprovedDiscount</Alias>
+            <Name>preApprovedDiscounty</Name>
+            <Alias>preApprovedDiscounty</Alias>
             <Visible>true</Visible>
             <CreationUpdateNumber>19</CreationUpdateNumber>
             <IDofType>J}double</IDofType>
@@ -24,7 +24,7 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>147</ValidationUpdateNumber>
+            <ValidationUpdateNumber>368</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}68d0cef3:14488d90874:-7c35">
             <Name>tier2ApproversBase</Name>
@@ -169,8 +169,8 @@
                 <Target>qst.totalNetRevenue</Target>
                 <ResolvedTarget>`L}997`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{totalNetRevenue}`</ResolvedTarget>
                 <Expression id="L}1016">
-                    <Value>40000</Value>
-                    <ResolvedValue>40000</ResolvedValue>
+                    <Value>400000</Value>
+                    <ResolvedValue>400000</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
@@ -226,8 +226,31 @@
                     <Customizable>false</Customizable>
                 </Expression>
                 <Variable>approval</Variable>
+                <Action id="L}1154">
+                    <Form>Call</Form>
+                    <Target>print</Target>
+                    <ResolvedTarget>`B}function.println`</ResolvedTarget>
+                    <Expression id="L}1157">
+                        <Value>&quot;Review Required: &quot; + approval.businessPracticesReviewNeeded</Value>
+                        <ResolvedValue>&quot;Review Required: &quot; + `L}1132`.`J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>message</ParameterAlias>
+                        <ParameterID>B}function.println_message</ParameterID>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </Action>
             </Action>
-            <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+            <Action id="L}1167">
+                <Form>Return</Form>
+                <Expression id="L}1168">
+                    <Value>true</Value>
+                    <ResolvedValue>true</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <ValidationUpdateNumber>367</ValidationUpdateNumber>
         </Function>
         <JaxbFactType id="J}com.mycompany.ns.salesquote.QuoteRequestType">
             <Name>com.mycompany.ns.salesquote.QuoteRequestType</Name>
@@ -5511,15 +5534,15 @@
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>359</UpdateNumber>
-        <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+        <UpdateNumber>368</UpdateNumber>
+        <ValidationUpdateNumber>368</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
     <RuleSet id="G}-4fa61623:14485880526:-7bd8">
         <Name>Ruleset</Name>
         <Alias>Ruleset</Alias>
         <Description>Made inactive.  Use decision table instead.</Description>
-        <ValidationUpdateNumber>285</ValidationUpdateNumber>
+        <ValidationUpdateNumber>368</ValidationUpdateNumber>
         <Customizable>true</Customizable>
         <Active>true</Active>
         <CalendarForm>DateTime</CalendarForm>
@@ -5616,7 +5639,7 @@
         <RuleSheet id="G}68d0cef3:14488d90874:-7c13">
             <Name>ApprovalMatrix</Name>
             <Alias>ApprovalMatrix</Alias>
-            <ValidationUpdateNumber>285</ValidationUpdateNumber>
+            <ValidationUpdateNumber>368</ValidationUpdateNumber>
             <Priority>medium</Priority>
             <Customizable>true</Customizable>
             <Active>true</Active>
@@ -5641,7 +5664,7 @@
             <Visible>true</Visible>
             <Logical>false</Logical>
             <Dimension id="L}657">
-                <Value>QuoteSummaryType.effectiveDiscount &lt;= preApprovedDiscount</Value>
+                <Value>QuoteSummaryType.effectiveDiscount &lt;= preApprovedDiscounty</Value>
                 <ResolvedValue>`L}669`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{effectiveDiscount}` &lt;= `G}68d0cef3:14488d90874:-7c36`</ResolvedValue>
                 <IsConstant>false</IsConstant>
                 <ParameterID>B}nil</ParameterID>
@@ -6193,7 +6216,7 @@
         <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
-    <ValidationUpdateNumber>-1</ValidationUpdateNumber>
-    <UpdateNumber>359</UpdateNumber>
+    <ValidationUpdateNumber>368</ValidationUpdateNumber>
+    <UpdateNumber>368</UpdateNumber>
     <ResourceBundle>ApprovalRulesTranslations</ResourceBundle>
 </RuleDictionary>
