@@ -157,8 +157,8 @@
                 <Target>qst.effectiveDiscount</Target>
                 <ResolvedTarget>`L}997`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{effectiveDiscount}`</ResolvedTarget>
                 <Expression id="L}1008">
-                    <Value>0.2</Value>
-                    <ResolvedValue>0.2</ResolvedValue>
+                    <Value>0.1</Value>
+                    <ResolvedValue>0.1</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
@@ -250,7 +250,7 @@
                     <Customizable>false</Customizable>
                 </Expression>
             </Action>
-            <ValidationUpdateNumber>367</ValidationUpdateNumber>
+            <ValidationUpdateNumber>392</ValidationUpdateNumber>
         </Function>
         <JaxbFactType id="J}com.mycompany.ns.salesquote.QuoteRequestType">
             <Name>com.mycompany.ns.salesquote.QuoteRequestType</Name>
@@ -5534,23 +5534,23 @@
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>368</UpdateNumber>
-        <ValidationUpdateNumber>368</ValidationUpdateNumber>
+        <UpdateNumber>392</UpdateNumber>
+        <ValidationUpdateNumber>392</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
     <RuleSet id="G}-4fa61623:14485880526:-7bd8">
         <Name>Ruleset</Name>
         <Alias>Ruleset</Alias>
         <Description>Made inactive.  Use decision table instead.</Description>
-        <ValidationUpdateNumber>368</ValidationUpdateNumber>
+        <ValidationUpdateNumber>388</ValidationUpdateNumber>
         <Customizable>true</Customizable>
         <Active>true</Active>
         <CalendarForm>DateTime</CalendarForm>
         <Rule id="G}-4fa61623:14485880526:-7bd1">
             <Name>Approvals</Name>
             <Alias>Approvals</Alias>
-            <ValidationUpdateNumber>144</ValidationUpdateNumber>
-            <Priority>medium</Priority>
+            <ValidationUpdateNumber>369</ValidationUpdateNumber>
+            <Priority>low</Priority>
             <Customizable>true</Customizable>
             <Active>false</Active>
             <CalendarForm>DateTime</CalendarForm>
@@ -5639,8 +5639,8 @@
         <RuleSheet id="G}68d0cef3:14488d90874:-7c13">
             <Name>ApprovalMatrix</Name>
             <Alias>ApprovalMatrix</Alias>
-            <ValidationUpdateNumber>368</ValidationUpdateNumber>
-            <Priority>medium</Priority>
+            <ValidationUpdateNumber>388</ValidationUpdateNumber>
+            <Priority>highest</Priority>
             <Customizable>true</Customizable>
             <Active>true</Active>
             <CalendarForm>DateTime</CalendarForm>
@@ -5884,7 +5884,7 @@
                 </Expression>
                 <AlwaysSelected>false</AlwaysSelected>
                 <DTActionNode id="L}876">
-                    <Selected>false</Selected>
+                    <Selected>true</Selected>
                     <Expression id="L}902">
                         <Value>tier2Approvers-base</Value>
                         <ResolvedValue>`G}68d0cef3:14488d90874:-7c35`</ResolvedValue>
@@ -5941,7 +5941,7 @@
                     </Expression>
                 </DTActionNode>
                 <DTActionNode id="L}877">
-                    <Selected>false</Selected>
+                    <Selected>true</Selected>
                     <Expression id="L}908">
                         <Value>tier2Approvers-base</Value>
                         <ResolvedValue>`G}68d0cef3:14488d90874:-7c35`</ResolvedValue>
@@ -5998,7 +5998,7 @@
                     </Expression>
                 </DTActionNode>
                 <DTActionNode id="L}878">
-                    <Selected>false</Selected>
+                    <Selected>true</Selected>
                     <Expression id="L}914">
                         <Value>tier2Approvers-base</Value>
                         <ResolvedValue>`G}68d0cef3:14488d90874:-7c35`</ResolvedValue>
@@ -6055,7 +6055,7 @@
                     </Expression>
                 </DTActionNode>
                 <DTActionNode id="L}879">
-                    <Selected>false</Selected>
+                    <Selected>true</Selected>
                     <Expression id="L}920">
                         <Value>tier2Approvers-high</Value>
                         <ResolvedValue>`G}68d0cef3:14488d90874:-7c34`</ResolvedValue>
@@ -6112,7 +6112,7 @@
                     </Expression>
                 </DTActionNode>
                 <DTActionNode id="L}945">
-                    <Selected>false</Selected>
+                    <Selected>true</Selected>
                     <Expression id="L}960">
                         <Value>tier2Approvers-base</Value>
                         <ResolvedValue>`G}68d0cef3:14488d90874:-7c35`</ResolvedValue>
@@ -6216,7 +6216,7 @@
         <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
-    <ValidationUpdateNumber>368</ValidationUpdateNumber>
-    <UpdateNumber>368</UpdateNumber>
+    <ValidationUpdateNumber>392</ValidationUpdateNumber>
+    <UpdateNumber>392</UpdateNumber>
     <ResourceBundle>ApprovalRulesTranslations</ResourceBundle>
 </RuleDictionary>
