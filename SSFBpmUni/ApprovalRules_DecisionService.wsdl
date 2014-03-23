@@ -1,6 +1,7 @@
 <wsdl:definitions
      name="ApprovalRules_DecisionService"
      targetNamespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_DecisionService"
+     xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"
      xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
      xmlns:tns="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_DecisionService"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
@@ -18,7 +19,7 @@
     </wsdl:types>
     <wsdl:message name="callFunctionStatelessMessage">
         <wsdl:part name="payload" element="tns:callFunctionStateless"/>
-    </wsdl:message>
+    </wsdl:message> 
     <wsdl:message name="callFunctionStatelessDecisionMessage">
         <wsdl:part name="payload" element="tns:callFunctionStatelessDecision"/>
     </wsdl:message>
