@@ -44,7 +44,7 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>26</ValidationUpdateNumber>
+            <ValidationUpdateNumber>400</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}68d0cef3:14488d90874:-7c34">
             <Name>tier2ApproversHigh</Name>
@@ -56,15 +56,15 @@
             <Type>String</Type>
             <IDofBucketSet>B}nil</IDofBucketSet>
             <Expression id="L}524">
-                <Value>&quot;doug&quot;</Value>
-                <ResolvedValue>&quot;doug&quot;</ResolvedValue>
+                <Value>&quot;robert&quot;</Value>
+                <ResolvedValue>&quot;robert&quot;</ResolvedValue>
                 <IsConstant>false</IsConstant>
                 <ParameterID>B}nil</ParameterID>
                 <Customizable>true</Customizable>
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>32</ValidationUpdateNumber>
+            <ValidationUpdateNumber>399</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}-3f2f991f:144e6fe8f6a:-7c0c">
             <Name>g_discount_high</Name>
@@ -85,7 +85,7 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>184</ValidationUpdateNumber>
+            <ValidationUpdateNumber>398</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}-3f2f991f:144e6fe8f6a:-7c0a">
             <Name>g_discount_med</Name>
@@ -106,7 +106,7 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>185</ValidationUpdateNumber>
+            <ValidationUpdateNumber>395</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}-3f2f991f:144e6fe8f6a:-7c09">
             <Name>g_discount_low</Name>
@@ -119,15 +119,15 @@
             <IDofBucketSet>G}68d0cef3:14488d90874:-7c32</IDofBucketSet>
             <BucketSet>DiscountBuckets</BucketSet>
             <Expression id="L}829">
-                <Value>.2</Value>
-                <ResolvedValue>.2</ResolvedValue>
+                <Value>.3</Value>
+                <ResolvedValue>.3</ResolvedValue>
                 <IsConstant>false</IsConstant>
                 <ParameterID>B}nil</ParameterID>
                 <Customizable>true</Customizable>
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>195</ValidationUpdateNumber>
+            <ValidationUpdateNumber>396</ValidationUpdateNumber>
         </Variable>
         <Function id="G}370f0a2a:144e9c33c36:-7c2f">
             <Name>testRule</Name>
@@ -5530,19 +5530,19 @@
                 <List>false</List>
                 <Tree>false</Tree>
             </DecisionFunctionOutput>
-            <ValidationUpdateNumber>286</ValidationUpdateNumber>
+            <ValidationUpdateNumber>404</ValidationUpdateNumber>
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>392</UpdateNumber>
-        <ValidationUpdateNumber>392</ValidationUpdateNumber>
+        <UpdateNumber>402</UpdateNumber>
+        <ValidationUpdateNumber>404</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
     <RuleSet id="G}-4fa61623:14485880526:-7bd8">
         <Name>Ruleset</Name>
         <Alias>Ruleset</Alias>
         <Description>Made inactive.  Use decision table instead.</Description>
-        <ValidationUpdateNumber>388</ValidationUpdateNumber>
+        <ValidationUpdateNumber>404</ValidationUpdateNumber>
         <Customizable>true</Customizable>
         <Active>true</Active>
         <CalendarForm>DateTime</CalendarForm>
@@ -6216,7 +6216,7 @@
         <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
-    <ValidationUpdateNumber>392</ValidationUpdateNumber>
-    <UpdateNumber>392</UpdateNumber>
+    <ValidationUpdateNumber>404</ValidationUpdateNumber>
+    <UpdateNumber>404</UpdateNumber>
     <ResourceBundle>ApprovalRulesTranslations</ResourceBundle>
 </RuleDictionary>
