@@ -16,7 +16,7 @@
                     <description locale="en"></description>
                 </descriptions>
             </topicDocumentation>
-            <topicDocumentation name="USER_TASK_1392671500101">
+            <topicDocumentation name="USER_TASK_1392671500101"> 
                 <labels>
                     <label locale="en">Business Practices Review</label>
                 </labels>
@@ -43,14 +43,6 @@
             <topicDocumentation name="USER_TASK_1392671511997">
                 <labels>
                     <label locale="en">Finalize Terms</label>
-                </labels>
-                <descriptions>
-                    <description locale="en"></description>
-                </descriptions>
-            </topicDocumentation>
-            <topicDocumentation name="BUSINESS_RULE_TASK_1392682125820">
-                <labels>
-                    <label locale="en">Determine Approvals</label>
                 </labels>
                 <descriptions>
                     <description locale="en"></description>
@@ -99,11 +91,26 @@
                     <label locale="en">Business Practices Outcome</label>
                 </labels>
             </topicDocumentation>
+            <topicDocumentation name="GTW964157443041">
+                <labels>
+                    <label locale="en">ExclusiveGateway3</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT9642718534670">
+                <labels>
+                    <label locale="en">BusinessRuleTask</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
             <topicDocumentation name="sf4"/>
             <topicDocumentation name="sf_1392671489623"/>
             <topicDocumentation name="sf_1392671511999"/>
             <topicDocumentation name="sf_1392682133028"/>
-            <topicDocumentation name="sf_1392682156275"/>
             <topicDocumentation name="sf_1392682161568">
                 <descriptions>
                     <description locale="en"></description>
@@ -149,6 +156,12 @@
                     <description locale="en"></description>
                 </descriptions>
             </topicDocumentation>
+            <topicDocumentation name="sf56">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf79"/>
         </topicDocumentations>
     </component>
 </processDocumentation>
