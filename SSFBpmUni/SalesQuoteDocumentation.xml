@@ -16,7 +16,7 @@
                     <description locale="en"></description>
                 </descriptions>
             </topicDocumentation>
-            <topicDocumentation name="USER_TASK_1392671500101"> 
+            <topicDocumentation name="USER_TASK_1392671500101">
                 <labels>
                     <label locale="en">Business Practices Review</label>
                 </labels>
@@ -99,6 +99,14 @@
                     <description locale="en"></description>
                 </descriptions>
             </topicDocumentation>
+            <topicDocumentation name="ACT9643572818925">
+                <labels>
+                    <label locale="en">Determine Approvals</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
             <topicDocumentation name="sf4"/>
             <topicDocumentation name="sf_1392671489623"/>
             <topicDocumentation name="sf_1392671511999"/>
@@ -153,6 +161,7 @@
                     <description locale="en"></description>
                 </descriptions>
             </topicDocumentation>
+            <topicDocumentation name="sf21"/>
         </topicDocumentations>
     </component>
 </processDocumentation>

@@ -19,29 +19,29 @@
     <mds-config xmlns="http://xmlns.oracle.com/mds/config">
       <persistence-config>
         <metadata-namespaces>
-          <namespace path="/soa/shared" metadata-store-usage="mstore-usage_11"/>
-          <namespace path="/bpm/applications" metadata-store-usage="mstore-usage_12"/>
-          <namespace path="/deployed-composites/default" metadata-store-usage="mstore-usage_13"/>
+          <namespace metadata-store-usage="mstore-usage_12" path="/bpm/applications"/>
+          <namespace metadata-store-usage="mstore-usage_16" path="/soa/shared"/>
+          <namespace metadata-store-usage="mstore-usage_17" path="/deployed-composites/default"/>
         </metadata-namespaces>
         <metadata-store-usages>
-          <metadata-store-usage id="mstore-usage_11">
-            <metadata-store class-name="oracle.mds.persistence.stores.file.FileMetadataStore">
-              <property name="metadata-path" value="${oracle.home}/integration"/>
-              <property name="partition-name" value="seed"/>
-            </metadata-store>
-          </metadata-store-usage>
           <metadata-store-usage id="mstore-usage_12">
             <metadata-store class-name="oracle.mds.persistence.stores.db.DBMetadataStore">
-              <property name="jdbc-userid" value="DEV_MDS"/>
-              <property name="jdbc-url" value="jdbc:oracle:thin:@harumi-pc:1521:ssf"/>
-              <property name="partition-name" value="obpm"/>
+              <property value="DEV_MDS" name="jdbc-userid"/>
+              <property value="jdbc:oracle:thin:@harumi-pc:1521:ssf" name="jdbc-url"/>
+              <property value="obpm" name="partition-name"/>
             </metadata-store>
           </metadata-store-usage>
-          <metadata-store-usage id="mstore-usage_13">
+          <metadata-store-usage id="mstore-usage_16">
+            <metadata-store class-name="oracle.mds.persistence.stores.file.FileMetadataStore">
+              <property value="${oracle.home}/integration" name="metadata-path"/>
+              <property value="seed" name="partition-name"/>
+            </metadata-store>
+          </metadata-store-usage>
+          <metadata-store-usage id="mstore-usage_17">
             <metadata-store class-name="oracle.mds.persistence.stores.db.DBMetadataStore">
-              <property name="jdbc-userid" value="DEV_MDS"/>
-              <property name="jdbc-url" value="jdbc:oracle:thin:@harumi-pc:1521:ssf"/>
-              <property name="partition-name" value="soa-infra"/>
+              <property value="DEV_MDS" name="jdbc-userid"/>
+              <property value="jdbc:oracle:thin:@harumi-pc:1521:ssf" name="jdbc-url"/>
+              <property value="soa-infra" name="partition-name"/>
             </metadata-store>
           </metadata-store-usage>
         </metadata-store-usages>

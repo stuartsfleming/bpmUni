@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<decisionServices xmlns="http://xmlns.oracle.com/bpel/rules" name="ApprovalRules">
+    <ruleEngineProvider name="OracleRulesSDK" provider="Oracle_11.0.0.0.0">
+        <repository type="SCA-Archive">
+            <path>SSFBpmUni/oracle/rules/SSFBpmUni/ApprovalRules.rules</path>
+        </repository>
+    </ruleEngineProvider>
+    <decisionService targetNamespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_DecisionService" ruleEngineProviderReference="OracleRulesSDK" name="ApprovalRules_DecisionService">
+        <catalog>ApprovalRules</catalog>
+        <pattern name="CallFunctionStateless">
+            <arguments>
+                <call>SSFBpmUni.ApprovalRules.ApprovalRules_DecisionService</call>
+            </arguments>
+        </pattern>
+        <pattern name="CallFunctionStateful">
+            <arguments>
+                <call>SSFBpmUni.ApprovalRules.ApprovalRules_DecisionService</call>
+            </arguments>
+        </pattern>
+    </decisionService>
+</decisionServices>
