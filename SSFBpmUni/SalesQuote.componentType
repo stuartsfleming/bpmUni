@@ -29,7 +29,7 @@
     <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
                     callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
   </reference>
-  <reference name="Rules.SSFBpmUni.Atester.Atester_DecisionService.reference" ui:wsdlLocation="Atester_DecisionService.wsdl">
-    <interface.wsdl interface="http://xmlns.oracle.com/Atester/Atester_DecisionService#wsdl.interface(IDecisionService)"/>
+  <reference name="Rules.SSFBpmUni.Aaa.aaa_DecisionService.reference" ui:wsdlLocation="aaa_DecisionService.wsdl">
+    <interface.wsdl interface="http://xmlns.oracle.com/aaa/aaa_DecisionService#wsdl.interface(IDecisionService)"/>
   </reference>
 </componentType>

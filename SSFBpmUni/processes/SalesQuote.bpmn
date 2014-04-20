@@ -1013,11 +1013,11 @@
                 </assignment>
             </dataOutputAssociation>
         </businessRuleTask>
-        <businessRuleTask isForCompensation="false" name="Atester" id="ACT9642783551082">
+        <businessRuleTask isForCompensation="false" name="ApprovalRuleNewest" id="ACT9642798823190">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="233" y="269"/>
+                        <ns5:Position x="242" y="284"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -1025,7 +1025,7 @@
                         <ns5:StringFeature value="Begin Level" name="level"/>
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                     </ns5:FeatureSet>
-                    <ns5:BusinessRuleTaskData businessRuleName="Rules.SSFBpmUni.Atester" functionName="Atester_DecisionService"/>
+                    <ns5:BusinessRuleTaskData businessRuleName="Rules.Salesquote.ApprovalRules" functionName="ApprovalRules_DecisionService"/>
                     <ns5:LogHandlers/>
                 </ns5:OracleExtensions>
             </extensionElements>
@@ -1044,10 +1044,10 @@
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataOutput>
-                <inputSet id="ACT9642783551082_uniqueInputSet">
+                <inputSet id="ACT9642798823190_uniqueInputSet">
                     <dataInputRefs>quote</dataInputRefs>
                 </inputSet>
-                <outputSet id="ACT9642783551082_uniqueOutputSet">
+                <outputSet id="ACT9642798823190_uniqueOutputSet">
                     <dataOutputRefs>approvalFlow</dataOutputRefs>
                 </outputSet>
             </ioSpecification>
@@ -1108,11 +1108,11 @@
                 </assignment>
             </dataOutputAssociation>
         </businessRuleTask>
-        <businessRuleTask isForCompensation="false" name="ApprovalRuleNewest" id="ACT9642798823190">
+        <businessRuleTask isForCompensation="false" name="BusinessRuleTask1" id="ACT9642943994156">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="352" y="285"/>
+                        <ns5:Position x="388" y="283"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -1120,15 +1120,38 @@
                         <ns5:StringFeature value="Begin Level" name="level"/>
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                     </ns5:FeatureSet>
+                    <ns5:BusinessRuleTaskData businessRuleName="Rules.SSFBpmUni.Aaa" functionName="aaa_DecisionService"/>
                     <ns5:LogHandlers/>
                 </ns5:OracleExtensions>
             </extensionElements>
-            <ioSpecification/>
+            <ioSpecification>
+                <dataInput name="quote" id="quote">
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:TypeRef namespace="http://www.mycompany.com/ns/salesquote" element="QuoteRequest" isArray="false"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                </dataInput>
+                <dataOutput name="approvalFlow" id="approvalFlow">
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:TypeRef namespace="http://www.mycompany.com/ns/salesquote" element="ApprovalFlow" isArray="false"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                </dataOutput>
+                <inputSet id="ACT9642943994156_uniqueInputSet">
+                    <dataInputRefs>quote</dataInputRefs>
+                </inputSet>
+                <outputSet id="ACT9642943994156_uniqueOutputSet">
+                    <dataOutputRefs>approvalFlow</dataOutputRefs>
+                </outputSet>
+            </ioSpecification>
             <dataInputAssociation>
                 <extensionElements>
                     <ns5:OracleExtensions/>
                 </extensionElements>
                 <sourceRef>quote</sourceRef>
+                <targetRef>quote</targetRef>
                 <assignment>
                     <extensionElements>
                         <ns5:OracleExtensions>
@@ -1155,6 +1178,7 @@
                 <extensionElements>
                     <ns5:OracleExtensions/>
                 </extensionElements>
+                <sourceRef>approvalFlow</sourceRef>
                 <targetRef>ApprovalFlow</targetRef>
                 <assignment>
                     <extensionElements>
@@ -1544,42 +1568,14 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="GTW964157443041" targetRef="ACT9642783551082" name="sf101" id="sf101">
-            <extensionElements>
-                <ns5:OracleExtensions>
-                    <ns5:SequenceFlowAttributes/>
-                    <ns5:FeatureSet>
-                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
-                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
-                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
-                        <ns5:IntegerFeature value="0" name="order"/>
-                    </ns5:FeatureSet>
-                </ns5:OracleExtensions>
-            </extensionElements>
-            <conditionExpression xsi:type="tFormalExpression"/>
-        </sequenceFlow>
-        <sequenceFlow sourceRef="ACT9642783551082" targetRef="EXCLUSIVE_GATEWAY_1392682149642" name="sf103" id="sf103">
-            <extensionElements>
-                <ns5:OracleExtensions>
-                    <ns5:SequenceFlowAttributes/>
-                    <ns5:FeatureSet>
-                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
-                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
-                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
-                    </ns5:FeatureSet>
-                </ns5:OracleExtensions>
-            </extensionElements>
-        </sequenceFlow>
         <sequenceFlow sourceRef="GTW964157443041" targetRef="ACT9642798823190" name="sf105" id="sf105">
             <extensionElements>
                 <ns5:OracleExtensions>
-                    <ns5:SequenceFlowAttributes>
-                        <ns5:Positions x="332" y="239"/>
-                    </ns5:SequenceFlowAttributes>
+                    <ns5:SequenceFlowAttributes/>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapseMessage"/>
-                        <ns5:StringFeature value="332,239" name="curve"/>
-                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
                         <ns5:IntegerFeature value="0" name="order"/>
                     </ns5:FeatureSet>
                 </ns5:OracleExtensions>
@@ -1587,6 +1583,32 @@
             <conditionExpression xsi:type="tFormalExpression"/>
         </sequenceFlow>
         <sequenceFlow sourceRef="ACT9642798823190" targetRef="EXCLUSIVE_GATEWAY_1392682149642" name="sf107" id="sf107">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW964157443041" targetRef="ACT9642943994156" name="sf155" id="sf155">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                        <ns5:IntegerFeature value="0" name="order"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <conditionExpression xsi:type="tFormalExpression"/>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT9642943994156" targetRef="EXCLUSIVE_GATEWAY_1392682149642" name="sf157" id="sf157">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes/>
