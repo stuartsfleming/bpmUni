@@ -1,11 +1,257 @@
 <?xml version="1.0"?>
-<RuleDictionary id="G}52ef8f9f:1458062d2c9:-7a95" xmlns="http://xmlns.oracle.com/rules/dictionary">
-    <Name>ApprovalRulesOrignal</Name>
-    <Alias>ApprovalRulesOrignal</Alias>
+<RuleDictionary id="G}-4fa61623:14485880526:-7fff" xmlns="http://xmlns.oracle.com/rules/dictionary">
+    <Name>ApprovalRules</Name>
+    <Alias>ApprovalRules</Alias>
     <Package>SSFBpmUni</Package>
     <Version>11.1.1.0.0</Version>
     <DataModel id="L}1">
         <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Variable id="G}68d0cef3:14488d90874:-7c36">
+            <Name>preApprovedDiscounty</Name>
+            <Alias>preApprovedDiscounty</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>19</CreationUpdateNumber>
+            <IDofType>J}double</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>double</Type>
+            <IDofBucketSet>B}nil</IDofBucketSet>
+            <Expression id="L}505">
+                <Value>.2</Value>
+                <ResolvedValue>.2</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>true</Customizable>
+            </Expression>
+            <Final>true</Final>
+            <System>false</System>
+            <ValidationUpdateNumber>368</ValidationUpdateNumber>
+        </Variable>
+        <Variable id="G}68d0cef3:14488d90874:-7c35">
+            <Name>tier2ApproversBase</Name>
+            <Alias>tier2Approvers-base</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>23</CreationUpdateNumber>
+            <IDofType>J}java.lang.String</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>String</Type>
+            <IDofBucketSet>B}nil</IDofBucketSet>
+            <Expression id="L}515">
+                <Value>&quot;doug&quot;</Value>
+                <ResolvedValue>&quot;doug&quot;</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>true</Customizable>
+            </Expression>
+            <Final>true</Final>
+            <System>false</System>
+            <ValidationUpdateNumber>400</ValidationUpdateNumber>
+        </Variable>
+        <Variable id="G}68d0cef3:14488d90874:-7c34">
+            <Name>tier2ApproversHigh</Name>
+            <Alias>tier2Approvers-high</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>27</CreationUpdateNumber>
+            <IDofType>J}java.lang.String</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>String</Type>
+            <IDofBucketSet>B}nil</IDofBucketSet>
+            <Expression id="L}524">
+                <Value>&quot;robert&quot;</Value>
+                <ResolvedValue>&quot;robert&quot;</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>true</Customizable>
+            </Expression>
+            <Final>true</Final>
+            <System>false</System>
+            <ValidationUpdateNumber>399</ValidationUpdateNumber>
+        </Variable>
+        <Variable id="G}-3f2f991f:144e6fe8f6a:-7c0c">
+            <Name>g_discount_high</Name>
+            <Alias>g_discount_high</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>170</CreationUpdateNumber>
+            <IDofType>J}double</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>double</Type>
+            <IDofBucketSet>G}68d0cef3:14488d90874:-7c32</IDofBucketSet>
+            <BucketSet>DiscountBuckets</BucketSet>
+            <Expression id="L}809">
+                <Value>.9</Value>
+                <ResolvedValue>.9</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>true</Customizable>
+            </Expression>
+            <Final>true</Final>
+            <System>false</System>
+            <ValidationUpdateNumber>398</ValidationUpdateNumber>
+        </Variable>
+        <Variable id="G}-3f2f991f:144e6fe8f6a:-7c0a">
+            <Name>g_discount_med</Name>
+            <Alias>g_discount_med</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>174</CreationUpdateNumber>
+            <IDofType>J}double</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>double</Type>
+            <IDofBucketSet>G}68d0cef3:14488d90874:-7c32</IDofBucketSet>
+            <BucketSet>DiscountBuckets</BucketSet>
+            <Expression id="L}818">
+                <Value>.6</Value>
+                <ResolvedValue>.6</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>true</Customizable>
+            </Expression>
+            <Final>true</Final>
+            <System>false</System>
+            <ValidationUpdateNumber>395</ValidationUpdateNumber>
+        </Variable>
+        <Variable id="G}-3f2f991f:144e6fe8f6a:-7c09">
+            <Name>g_discount_low</Name>
+            <Alias>g_discount_low</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>179</CreationUpdateNumber>
+            <IDofType>J}double</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>double</Type>
+            <IDofBucketSet>G}68d0cef3:14488d90874:-7c32</IDofBucketSet>
+            <BucketSet>DiscountBuckets</BucketSet>
+            <Expression id="L}829">
+                <Value>.3</Value>
+                <ResolvedValue>.3</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>true</Customizable>
+            </Expression>
+            <Final>true</Final>
+            <System>false</System>
+            <ValidationUpdateNumber>396</ValidationUpdateNumber>
+        </Variable>
+        <Function id="G}370f0a2a:144e9c33c36:-7c2f">
+            <Name>testRule</Name>
+            <Alias>testRule</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>297</CreationUpdateNumber>
+            <IDofType>J}boolean</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>boolean</Type>
+            <IDofBucketSet>B}nil</IDofBucketSet>
+            <Form>Structured</Form>
+            <Action id="L}997">
+                <Form>Assign New</Form>
+                <Target>QuoteSummaryType</Target>
+                <ResolvedTarget>`J}com.mycompany.ns.salesquote.QuoteSummaryType`</ResolvedTarget>
+                <Expression id="L}998">
+                    <Value>new QuoteSummaryType()</Value>
+                    <ResolvedValue>new `J}public com.mycompany.ns.salesquote.QuoteSummaryType()`()</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Variable>qst</Variable>
+            </Action>
+            <Action id="L}1007">
+                <Form>Assign</Form>
+                <Target>qst.effectiveDiscount</Target>
+                <ResolvedTarget>`L}997`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{effectiveDiscount}`</ResolvedTarget>
+                <Expression id="L}1008">
+                    <Value>0.1</Value>
+                    <ResolvedValue>0.1</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <Action id="L}1015">
+                <Form>Assign</Form>
+                <Target>qst.totalNetRevenue</Target>
+                <ResolvedTarget>`L}997`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{totalNetRevenue}`</ResolvedTarget>
+                <Expression id="L}1016">
+                    <Value>400000</Value>
+                    <ResolvedValue>400000</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <Action id="L}1024">
+                <Form>Assign New</Form>
+                <Target>QuoteRequestType</Target>
+                <ResolvedTarget>`J}com.mycompany.ns.salesquote.QuoteRequestType`</ResolvedTarget>
+                <Expression id="L}1025">
+                    <Value>new QuoteRequestType()</Value>
+                    <ResolvedValue>new `J}public com.mycompany.ns.salesquote.QuoteRequestType()`()</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Variable>qrt</Variable>
+            </Action>
+            <Action id="L}1038">
+                <Form>Assign</Form>
+                <Target>qrt.summary</Target>
+                <ResolvedTarget>`L}1024`.`J}com.mycompany.ns.salesquote.QuoteRequestType.{summary}`</ResolvedTarget>
+                <Expression id="L}1041">
+                    <Value>qst</Value>
+                    <ResolvedValue>`L}997`</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <Action id="L}1102">
+                <Form>Assign New</Form>
+                <Target>List</Target>
+                <ResolvedTarget>`J}java.util.List`</ResolvedTarget>
+                <Expression id="L}1105">
+                    <Value>ApprovalRules_DecisionService(qrt)</Value>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bd7`(`L}1024`)</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Variable>ListResult</Variable>
+            </Action>
+            <Action id="L}1132">
+                <Form>For</Form>
+                <Target>ApprovalFlowType</Target>
+                <ResolvedTarget>`J}com.mycompany.ns.salesquote.ApprovalFlowType`</ResolvedTarget>
+                <Expression id="L}1133">
+                    <Value>ListResult</Value>
+                    <ResolvedValue>`L}1102`</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Variable>approval</Variable>
+                <Action id="L}1154">
+                    <Form>Call</Form>
+                    <Target>print</Target>
+                    <ResolvedTarget>`B}function.println`</ResolvedTarget>
+                    <Expression id="L}1157">
+                        <Value>&quot;Review Required: &quot; + approval.businessPracticesReviewNeeded</Value>
+                        <ResolvedValue>&quot;Review Required: &quot; + `L}1132`.`J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>message</ParameterAlias>
+                        <ParameterID>B}function.println_message</ParameterID>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </Action>
+            </Action>
+            <Action id="L}1167">
+                <Form>Return</Form>
+                <Expression id="L}1168">
+                    <Value>true</Value>
+                    <ResolvedValue>true</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <ValidationUpdateNumber>392</ValidationUpdateNumber>
+        </Function>
         <JaxbFactType id="J}com.mycompany.ns.salesquote.QuoteRequestType">
             <Name>com.mycompany.ns.salesquote.QuoteRequestType</Name>
             <Alias>QuoteRequestType</Alias>
@@ -130,7 +376,7 @@
                 <Alias>setSummary</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a94">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c37">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}com.mycompany.ns.salesquote.QuoteSummaryType</IDsOfType>
                 </OverloadedParameter>
@@ -202,7 +448,7 @@
                 <Alias>setQuoteRequestStatus</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a93">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c36">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -240,7 +486,7 @@
                 <Alias>setRecommendedDiscount</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a92">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c35">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}com.mycompany.ns.salesquote.DiscountRecommendationType</IDsOfType>
                 </OverloadedParameter>
@@ -261,7 +507,7 @@
                 <Alias>setLicenseTerm</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a91">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c34">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.util.List</IDsOfType>
                 </OverloadedParameter>
@@ -282,7 +528,7 @@
                 <Alias>setProductItem</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a90">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c33">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.util.List</IDsOfType>
                 </OverloadedParameter>
@@ -363,7 +609,7 @@
                 <IDofType>J}com.mycompany.ns.salesquote.LicenseTermCategoryType</IDofType>
                 <ListContentID>B}nil</ListContentID>
                 <Type>LicenseTermCategoryType</Type>
-                <IDofBucketSet>G}52ef8f9f:1458062d2c9:-7a84</IDofBucketSet>
+                <IDofBucketSet>G}-4fa61623:14485880526:-7c27</IDofBucketSet>
                 <BucketSet>LicenseTermCategoryType</BucketSet>
                 <Writable>true</Writable>
                 <Readable>true</Readable>
@@ -402,7 +648,7 @@
                 <IDofType>J}com.mycompany.ns.salesquote.LicenseTermTypeType</IDofType>
                 <ListContentID>B}nil</ListContentID>
                 <Type>LicenseTermTypeType</Type>
-                <IDofBucketSet>G}52ef8f9f:1458062d2c9:-7a4e</IDofBucketSet>
+                <IDofBucketSet>G}-4fa61623:14485880526:-7bf1</IDofBucketSet>
                 <BucketSet>LicenseTermTypeType</BucketSet>
                 <Writable>true</Writable>
                 <Readable>true</Readable>
@@ -429,7 +675,7 @@
                 <Static>false</Static>
                 <IDofType>J}com.mycompany.ns.salesquote.LicenseTermTypeType</IDofType>
                 <Type>LicenseTermTypeType</Type>
-                <IDofBucketSet>G}52ef8f9f:1458062d2c9:-7a4e</IDofBucketSet>
+                <IDofBucketSet>G}-4fa61623:14485880526:-7bf1</IDofBucketSet>
                 <BucketSet>LicenseTermTypeType</BucketSet>
             </Method>
             <Method id="J}public com.mycompany.ns.salesquote.LicenseTermCategoryType com.mycompany.ns.salesquote.LicenseTermType.getCategory()">
@@ -447,7 +693,7 @@
                 <Static>false</Static>
                 <IDofType>J}com.mycompany.ns.salesquote.LicenseTermCategoryType</IDofType>
                 <Type>LicenseTermCategoryType</Type>
-                <IDofBucketSet>G}52ef8f9f:1458062d2c9:-7a84</IDofBucketSet>
+                <IDofBucketSet>G}-4fa61623:14485880526:-7c27</IDofBucketSet>
                 <BucketSet>LicenseTermCategoryType</BucketSet>
             </Method>
             <Method id="J}public java.lang.String com.mycompany.ns.salesquote.LicenseTermType.getDescription()">
@@ -472,7 +718,7 @@
                 <Alias>setType</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a8f">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c32">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}com.mycompany.ns.salesquote.LicenseTermTypeType</IDsOfType>
                 </OverloadedParameter>
@@ -493,7 +739,7 @@
                 <Alias>setDescription</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a8e">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c31">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -514,7 +760,7 @@
                 <Alias>setCategory</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a8d">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c30">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}com.mycompany.ns.salesquote.LicenseTermCategoryType</IDsOfType>
                 </OverloadedParameter>
@@ -552,7 +798,7 @@
                 <Alias>setApproval</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a8c">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c2f">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}com.mycompany.ns.salesquote.ApprovalType</IDsOfType>
                 </OverloadedParameter>
@@ -744,7 +990,7 @@
                 <Alias>valueOf</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a8b">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c2e">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -758,7 +1004,7 @@
                 <Static>true</Static>
                 <IDofType>J}com.mycompany.ns.salesquote.LicenseTermCategoryType</IDofType>
                 <Type>LicenseTermCategoryType</Type>
-                <IDofBucketSet>G}52ef8f9f:1458062d2c9:-7a84</IDofBucketSet>
+                <IDofBucketSet>G}-4fa61623:14485880526:-7c27</IDofBucketSet>
                 <BucketSet>LicenseTermCategoryType</BucketSet>
             </Method>
             <Method id="J}public static com.mycompany.ns.salesquote.LicenseTermCategoryType com.mycompany.ns.salesquote.LicenseTermCategoryType.fromValue(java.lang.String)">
@@ -766,7 +1012,7 @@
                 <Alias>fromValue</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a8a">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c2d">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -780,7 +1026,7 @@
                 <Static>true</Static>
                 <IDofType>J}com.mycompany.ns.salesquote.LicenseTermCategoryType</IDofType>
                 <Type>LicenseTermCategoryType</Type>
-                <IDofBucketSet>G}52ef8f9f:1458062d2c9:-7a84</IDofBucketSet>
+                <IDofBucketSet>G}-4fa61623:14485880526:-7c27</IDofBucketSet>
                 <BucketSet>LicenseTermCategoryType</BucketSet>
             </Method>
             <Method id="J}public final java.lang.String java.lang.Enum.name() declared in com.mycompany.ns.salesquote.LicenseTermCategoryType">
@@ -805,7 +1051,7 @@
                 <Alias>equals</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a89">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c2c">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Object</IDsOfType>
                 </OverloadedParameter>
@@ -860,7 +1106,7 @@
                 <Alias>compareTo</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a88">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c2b">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Enum</IDsOfType>
                 </OverloadedParameter>
@@ -881,7 +1127,7 @@
                 <Alias>compareTo</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a87">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c2a">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Object</IDsOfType>
                 </OverloadedParameter>
@@ -902,11 +1148,11 @@
                 <Alias>valueOf</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a86">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c29">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Class</IDsOfType>
                 </OverloadedParameter>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a85">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c28">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -970,7 +1216,7 @@
                 <isFinal>true</isFinal>
                 <isAbstract>false</isAbstract>
             </Modifiers>
-            <EnumBucketSetID>G}52ef8f9f:1458062d2c9:-7a84</EnumBucketSetID>
+            <EnumBucketSetID>G}-4fa61623:14485880526:-7c27</EnumBucketSetID>
             <EnumBucketSet>LicenseTermCategoryType</EnumBucketSet>
             <Timestamp>0</Timestamp>
             <ENUM>true</ENUM>
@@ -1101,7 +1347,7 @@
                 <Alias>setTitle</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a7d">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c20">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -1139,7 +1385,7 @@
                 <Alias>setApprover</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a7c">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c1f">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -1177,7 +1423,7 @@
                 <Alias>setApproved</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a7b">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c1e">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Boolean</IDsOfType>
                 </OverloadedParameter>
@@ -1215,7 +1461,7 @@
                 <Alias>setApprovalIsConditional</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a7a">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c1d">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Boolean</IDsOfType>
                 </OverloadedParameter>
@@ -1253,7 +1499,7 @@
                 <Alias>setApprovalNote</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a79">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c1c">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -1405,7 +1651,7 @@
                 <Alias>setName</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a78">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c1b">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -1443,7 +1689,7 @@
                 <Alias>setTitle</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a77">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c1a">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -1481,7 +1727,7 @@
                 <Alias>setEmailAddress</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a76">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c19">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -1519,7 +1765,7 @@
                 <Alias>setPhoneNumber</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a75">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c18">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -1690,7 +1936,7 @@
                 <Alias>setState</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a74">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c17">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -1728,7 +1974,7 @@
                 <Alias>setCountry</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a73">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c16">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -1766,7 +2012,7 @@
                 <Alias>setStreet</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a72">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c15">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -1804,7 +2050,7 @@
                 <Alias>setCity</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a71">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c14">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -1842,7 +2088,7 @@
                 <Alias>setZip</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a70">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c13">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.math.BigDecimal</IDsOfType>
                 </OverloadedParameter>
@@ -1975,7 +2221,7 @@
                 <Alias>setRevenueRange</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a6f">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c12">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -2013,7 +2259,7 @@
                 <Alias>setSuggestedDiscount</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a6e">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c11">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -2051,7 +2297,7 @@
                 <Alias>setFutureDiscountProvision</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a6d">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c10">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -2298,7 +2544,7 @@
                 <Alias>setProductName</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a6c">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c0f">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -2353,7 +2599,7 @@
                 <Alias>setApproval</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a6b">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c0e">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}com.mycompany.ns.salesquote.ApprovalType</IDsOfType>
                 </OverloadedParameter>
@@ -2374,7 +2620,7 @@
                 <Alias>setProductID</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a6a">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c0d">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -2412,7 +2658,7 @@
                 <Alias>setQuantity</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a69">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c0c">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}int</IDsOfType>
                 </OverloadedParameter>
@@ -2450,7 +2696,7 @@
                 <Alias>setListPrice</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a68">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c0b">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}double</IDsOfType>
                 </OverloadedParameter>
@@ -2488,7 +2734,7 @@
                 <Alias>setPreApprovedDiscount</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a67">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c0a">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Double</IDsOfType>
                 </OverloadedParameter>
@@ -2526,7 +2772,7 @@
                 <Alias>setRequestedDiscount</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a66">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c09">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}double</IDsOfType>
                 </OverloadedParameter>
@@ -2564,7 +2810,7 @@
                 <Alias>setRestrictedItem</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a65">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c08">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Boolean</IDsOfType>
                 </OverloadedParameter>
@@ -2602,7 +2848,7 @@
                 <Alias>setControlledAvailability</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a64">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c07">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Boolean</IDsOfType>
                 </OverloadedParameter>
@@ -2940,33 +3186,12 @@
                 <Type>AddressType</Type>
                 <IDofBucketSet>B}nil</IDofBucketSet>
             </Method>
-            <Method id="J}public void com.mycompany.ns.salesquote.QuoteSummaryType.setAddress(com.mycompany.ns.salesquote.AddressType)">
-                <Name>setAddress</Name>
-                <Alias>setAddress</Alias>
-                <Visible>false</Visible>
-                <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a63">
-                    <CreationUpdateNumber>4</CreationUpdateNumber>
-                    <IDsOfType>J}com.mycompany.ns.salesquote.AddressType</IDsOfType>
-                </OverloadedParameter>
-                <Modifiers id="L}263">
-                    <CreationUpdateNumber>4</CreationUpdateNumber>
-                    <Access>1</Access>
-                    <isStatic>false</isStatic>
-                    <isFinal>false</isFinal>
-                    <isAbstract>false</isAbstract>
-                </Modifiers>
-                <Static>false</Static>
-                <IDofType>J}void</IDofType>
-                <Type>void</Type>
-                <IDofBucketSet>B}nil</IDofBucketSet>
-            </Method>
             <Method id="J}public java.util.List com.mycompany.ns.salesquote.QuoteSummaryType.getContacts()">
                 <Name>getContacts</Name>
                 <Alias>getContacts</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <Modifiers id="L}265">
+                <Modifiers id="L}263">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <Access>1</Access>
                     <isStatic>false</isStatic>
@@ -2976,6 +3201,27 @@
                 <Static>false</Static>
                 <IDofType>J}java.util.List</IDofType>
                 <Type>List</Type>
+                <IDofBucketSet>B}nil</IDofBucketSet>
+            </Method>
+            <Method id="J}public void com.mycompany.ns.salesquote.QuoteSummaryType.setAddress(com.mycompany.ns.salesquote.AddressType)">
+                <Name>setAddress</Name>
+                <Alias>setAddress</Alias>
+                <Visible>false</Visible>
+                <CreationUpdateNumber>4</CreationUpdateNumber>
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c06">
+                    <CreationUpdateNumber>4</CreationUpdateNumber>
+                    <IDsOfType>J}com.mycompany.ns.salesquote.AddressType</IDsOfType>
+                </OverloadedParameter>
+                <Modifiers id="L}265">
+                    <CreationUpdateNumber>4</CreationUpdateNumber>
+                    <Access>1</Access>
+                    <isStatic>false</isStatic>
+                    <isFinal>false</isFinal>
+                    <isAbstract>false</isAbstract>
+                </Modifiers>
+                <Static>false</Static>
+                <IDofType>J}void</IDofType>
+                <Type>void</Type>
                 <IDofBucketSet>B}nil</IDofBucketSet>
             </Method>
             <Method id="J}public java.lang.String com.mycompany.ns.salesquote.QuoteSummaryType.getOpportunityID()">
@@ -3000,7 +3246,7 @@
                 <Alias>setOpportunityID</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a62">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c05">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -3038,7 +3284,7 @@
                 <Alias>setAccountName</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a61">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c04">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -3076,7 +3322,7 @@
                 <Alias>setNewCustomer</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a60">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c03">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -3114,7 +3360,7 @@
                 <Alias>setPurchaseToDate</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a5f">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c02">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Double</IDsOfType>
                 </OverloadedParameter>
@@ -3152,7 +3398,7 @@
                 <Alias>setCustomerType</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a5e">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c01">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -3190,7 +3436,7 @@
                 <Alias>setIndustry</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a5d">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7c00">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -3228,7 +3474,7 @@
                 <Alias>setSalesRepId</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a5c">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bff">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -3266,7 +3512,7 @@
                 <Alias>setSalesRepName</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a5b">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bfe">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -3304,7 +3550,7 @@
                 <Alias>setSalesRepContact</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a5a">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bfd">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -3342,7 +3588,7 @@
                 <Alias>setValidUntil</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a59">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bfc">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}javax.xml.datatype.XMLGregorianCalendar</IDsOfType>
                 </OverloadedParameter>
@@ -3380,7 +3626,7 @@
                 <Alias>setTotalNetRevenue</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a58">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bfb">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Double</IDsOfType>
                 </OverloadedParameter>
@@ -3418,7 +3664,7 @@
                 <Alias>setEffectiveDiscount</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a57">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bfa">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Double</IDsOfType>
                 </OverloadedParameter>
@@ -3439,7 +3685,7 @@
                 <Alias>setContacts</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a56">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bf9">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.util.List</IDsOfType>
                 </OverloadedParameter>
@@ -3831,7 +4077,7 @@
                 <Alias>valueOf</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a55">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bf8">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -3845,7 +4091,7 @@
                 <Static>true</Static>
                 <IDofType>J}com.mycompany.ns.salesquote.LicenseTermTypeType</IDofType>
                 <Type>LicenseTermTypeType</Type>
-                <IDofBucketSet>G}52ef8f9f:1458062d2c9:-7a4e</IDofBucketSet>
+                <IDofBucketSet>G}-4fa61623:14485880526:-7bf1</IDofBucketSet>
                 <BucketSet>LicenseTermTypeType</BucketSet>
             </Method>
             <Method id="J}public static com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.fromValue(java.lang.String)">
@@ -3853,7 +4099,7 @@
                 <Alias>fromValue</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a54">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bf7">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -3867,7 +4113,7 @@
                 <Static>true</Static>
                 <IDofType>J}com.mycompany.ns.salesquote.LicenseTermTypeType</IDofType>
                 <Type>LicenseTermTypeType</Type>
-                <IDofBucketSet>G}52ef8f9f:1458062d2c9:-7a4e</IDofBucketSet>
+                <IDofBucketSet>G}-4fa61623:14485880526:-7bf1</IDofBucketSet>
                 <BucketSet>LicenseTermTypeType</BucketSet>
             </Method>
             <Method id="J}public final java.lang.String java.lang.Enum.name() declared in com.mycompany.ns.salesquote.LicenseTermTypeType">
@@ -3892,7 +4138,7 @@
                 <Alias>equals</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a53">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bf6">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Object</IDsOfType>
                 </OverloadedParameter>
@@ -3947,7 +4193,7 @@
                 <Alias>compareTo</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a52">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bf5">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Enum</IDsOfType>
                 </OverloadedParameter>
@@ -3968,7 +4214,7 @@
                 <Alias>compareTo</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a51">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bf4">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Object</IDsOfType>
                 </OverloadedParameter>
@@ -3989,11 +4235,11 @@
                 <Alias>valueOf</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a50">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bf3">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.Class</IDsOfType>
                 </OverloadedParameter>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a4f">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bf2">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -4057,7 +4303,7 @@
                 <isFinal>true</isFinal>
                 <isAbstract>false</isAbstract>
             </Modifiers>
-            <EnumBucketSetID>G}52ef8f9f:1458062d2c9:-7a4e</EnumBucketSetID>
+            <EnumBucketSetID>G}-4fa61623:14485880526:-7bf1</EnumBucketSetID>
             <EnumBucketSet>LicenseTermTypeType</EnumBucketSet>
             <Timestamp>0</Timestamp>
             <ENUM>true</ENUM>
@@ -4297,7 +4543,7 @@
                 <Alias>createApprovalFlow</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a3d">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7be0">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}com.mycompany.ns.salesquote.ApprovalFlowType</IDsOfType>
                 </OverloadedParameter>
@@ -4318,7 +4564,7 @@
                 <Alias>createQuoteRequest</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a3c">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bdf">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}com.mycompany.ns.salesquote.QuoteRequestType</IDsOfType>
                 </OverloadedParameter>
@@ -4509,7 +4755,7 @@
                 <Alias>setSelfApproved</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a3b">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bde">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}boolean</IDsOfType>
                 </OverloadedParameter>
@@ -4547,7 +4793,7 @@
                 <Alias>setNumberOfTier3Levels</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a3a">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bdd">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}int</IDsOfType>
                 </OverloadedParameter>
@@ -4585,7 +4831,7 @@
                 <Alias>setTier2ApprovalNeeded</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a39">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bdc">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}boolean</IDsOfType>
                 </OverloadedParameter>
@@ -4623,7 +4869,7 @@
                 <Alias>setTier2Approvers</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a38">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bdb">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}java.lang.String</IDsOfType>
                 </OverloadedParameter>
@@ -4661,7 +4907,7 @@
                 <Alias>setTier1ApprovalNeeded</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a37">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bda">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}boolean</IDsOfType>
                 </OverloadedParameter>
@@ -4699,7 +4945,7 @@
                 <Alias>setBusinessPracticesReviewNeeded</Alias>
                 <Visible>false</Visible>
                 <CreationUpdateNumber>4</CreationUpdateNumber>
-                <OverloadedParameter id="G}52ef8f9f:1458062d2c9:-7a36">
+                <OverloadedParameter id="G}-4fa61623:14485880526:-7bd9">
                     <CreationUpdateNumber>4</CreationUpdateNumber>
                     <IDsOfType>J}boolean</IDsOfType>
                 </OverloadedParameter>
@@ -4748,7 +4994,7 @@
             <NodeName>ApprovalFlowType</NodeName>
             <Namespace>http://www.mycompany.com/ns/salesquote</Namespace>
         </JaxbFactType>
-        <BucketSet id="G}52ef8f9f:1458062d2c9:-7a84">
+        <BucketSet id="G}-4fa61623:14485880526:-7c27">
             <Name>LicenseTermCategoryType</Name>
             <Alias>LicenseTermCategoryType</Alias>
             <Visible>true</Visible>
@@ -4757,7 +5003,7 @@
             <ListContentID>B}nil</ListContentID>
             <Type>LicenseTermCategoryType</Type>
             <Form>Enum</Form>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a82">
+            <Bucket id="G}-4fa61623:14485880526:-7c25">
                 <Name>LicenseTermCategoryType.PRICE_HOLD_OPTIONS</Name>
                 <Alias>PRICE_HOLD_OPTIONS</Alias>
                 <Visible>true</Visible>
@@ -4767,13 +5013,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}101">
                     <Value>LicenseTermCategoryType.PRICE_HOLD_OPTIONS</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a84`.`J}public static final com.mycompany.ns.salesquote.LicenseTermCategoryType com.mycompany.ns.salesquote.LicenseTermCategoryType.PRICE_HOLD_OPTIONS`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7c27`.`J}public static final com.mycompany.ns.salesquote.LicenseTermCategoryType com.mycompany.ns.salesquote.LicenseTermCategoryType.PRICE_HOLD_OPTIONS`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a81">
+            <Bucket id="G}-4fa61623:14485880526:-7c24">
                 <Name>LicenseTermCategoryType.NON_STANDARD_PRICING_AND_CURRENCY_OPTIONS</Name>
                 <Alias>NON_STANDARD_PRICING_AND_CURRENCY_OPTIONS</Alias>
                 <Visible>true</Visible>
@@ -4783,13 +5029,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}102">
                     <Value>LicenseTermCategoryType.NON_STANDARD_PRICING_AND_CURRENCY_OPTIONS</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a84`.`J}public static final com.mycompany.ns.salesquote.LicenseTermCategoryType com.mycompany.ns.salesquote.LicenseTermCategoryType.NON_STANDARD_PRICING_AND_CURRENCY_OPTIONS`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7c27`.`J}public static final com.mycompany.ns.salesquote.LicenseTermCategoryType com.mycompany.ns.salesquote.LicenseTermCategoryType.NON_STANDARD_PRICING_AND_CURRENCY_OPTIONS`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a80">
+            <Bucket id="G}-4fa61623:14485880526:-7c23">
                 <Name>LicenseTermCategoryType.LICENSE_MANAGEMENT_SERVICES_OPTIONS</Name>
                 <Alias>LICENSE_MANAGEMENT_SERVICES_OPTIONS</Alias>
                 <Visible>true</Visible>
@@ -4799,13 +5045,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}103">
                     <Value>LicenseTermCategoryType.LICENSE_MANAGEMENT_SERVICES_OPTIONS</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a84`.`J}public static final com.mycompany.ns.salesquote.LicenseTermCategoryType com.mycompany.ns.salesquote.LicenseTermCategoryType.LICENSE_MANAGEMENT_SERVICES_OPTIONS`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7c27`.`J}public static final com.mycompany.ns.salesquote.LicenseTermCategoryType com.mycompany.ns.salesquote.LicenseTermCategoryType.LICENSE_MANAGEMENT_SERVICES_OPTIONS`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a7f">
+            <Bucket id="G}-4fa61623:14485880526:-7c22">
                 <Name>LicenseTermCategoryType.NON_STANDARD_LICENSING_OPTIONS</Name>
                 <Alias>NON_STANDARD_LICENSING_OPTIONS</Alias>
                 <Visible>true</Visible>
@@ -4815,13 +5061,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}104">
                     <Value>LicenseTermCategoryType.NON_STANDARD_LICENSING_OPTIONS</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a84`.`J}public static final com.mycompany.ns.salesquote.LicenseTermCategoryType com.mycompany.ns.salesquote.LicenseTermCategoryType.NON_STANDARD_LICENSING_OPTIONS`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7c27`.`J}public static final com.mycompany.ns.salesquote.LicenseTermCategoryType com.mycompany.ns.salesquote.LicenseTermCategoryType.NON_STANDARD_LICENSING_OPTIONS`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a7e">
+            <Bucket id="G}-4fa61623:14485880526:-7c21">
                 <Name>null</Name>
                 <Alias>null</Alias>
                 <Visible>true</Visible>
@@ -4839,9 +5085,9 @@
             </Bucket>
             <CalendarForm>Date</CalendarForm>
             <Excluded>false</Excluded>
-            <ValidationUpdateNumber>4</ValidationUpdateNumber>
+            <ValidationUpdateNumber>47</ValidationUpdateNumber>
         </BucketSet>
-        <BucketSet id="G}52ef8f9f:1458062d2c9:-7a4e">
+        <BucketSet id="G}-4fa61623:14485880526:-7bf1">
             <Name>LicenseTermTypeType</Name>
             <Alias>LicenseTermTypeType</Alias>
             <Visible>true</Visible>
@@ -4850,7 +5096,7 @@
             <ListContentID>B}nil</ListContentID>
             <Type>LicenseTermTypeType</Type>
             <Form>Enum</Form>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a4c">
+            <Bucket id="G}-4fa61623:14485880526:-7bef">
                 <Name>LicenseTermTypeType.FUTURE_PROGRAM_PRICE_HOLDS</Name>
                 <Alias>FUTURE_PROGRAM_PRICE_HOLDS</Alias>
                 <Visible>true</Visible>
@@ -4860,13 +5106,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}389">
                     <Value>LicenseTermTypeType.FUTURE_PROGRAM_PRICE_HOLDS</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.FUTURE_PROGRAM_PRICE_HOLDS`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.FUTURE_PROGRAM_PRICE_HOLDS`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a4b">
+            <Bucket id="G}-4fa61623:14485880526:-7bee">
                 <Name>LicenseTermTypeType.FUTURE_DISCOUNT_PROVISIONS</Name>
                 <Alias>FUTURE_DISCOUNT_PROVISIONS</Alias>
                 <Visible>true</Visible>
@@ -4876,13 +5122,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}390">
                     <Value>LicenseTermTypeType.FUTURE_DISCOUNT_PROVISIONS</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.FUTURE_DISCOUNT_PROVISIONS`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.FUTURE_DISCOUNT_PROVISIONS`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a4a">
+            <Bucket id="G}-4fa61623:14485880526:-7bed">
                 <Name>LicenseTermTypeType.PRICE_HOLD_ON_ENTIRE_PRICE_LIST</Name>
                 <Alias>PRICE_HOLD_ON_ENTIRE_PRICE_LIST</Alias>
                 <Visible>true</Visible>
@@ -4892,13 +5138,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}391">
                     <Value>LicenseTermTypeType.PRICE_HOLD_ON_ENTIRE_PRICE_LIST</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.PRICE_HOLD_ON_ENTIRE_PRICE_LIST`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.PRICE_HOLD_ON_ENTIRE_PRICE_LIST`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a49">
+            <Bucket id="G}-4fa61623:14485880526:-7bec">
                 <Name>LicenseTermTypeType.MODIFICATIONS_TO_CONTRACTUAL_PRICING</Name>
                 <Alias>MODIFICATIONS_TO_CONTRACTUAL_PRICING</Alias>
                 <Visible>true</Visible>
@@ -4908,13 +5154,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}392">
                     <Value>LicenseTermTypeType.MODIFICATIONS_TO_CONTRACTUAL_PRICING</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.MODIFICATIONS_TO_CONTRACTUAL_PRICING`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.MODIFICATIONS_TO_CONTRACTUAL_PRICING`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a48">
+            <Bucket id="G}-4fa61623:14485880526:-7beb">
                 <Name>LicenseTermTypeType.CURRENCY</Name>
                 <Alias>CURRENCY</Alias>
                 <Visible>true</Visible>
@@ -4924,13 +5170,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}393">
                     <Value>LicenseTermTypeType.CURRENCY</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.CURRENCY`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.CURRENCY`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a47">
+            <Bucket id="G}-4fa61623:14485880526:-7bea">
                 <Name>LicenseTermTypeType.PREFERRED_CUSTOMER_PROVISIONS</Name>
                 <Alias>PREFERRED_CUSTOMER_PROVISIONS</Alias>
                 <Visible>true</Visible>
@@ -4940,13 +5186,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}394">
                     <Value>LicenseTermTypeType.PREFERRED_CUSTOMER_PROVISIONS</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.PREFERRED_CUSTOMER_PROVISIONS`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.PREFERRED_CUSTOMER_PROVISIONS`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a46">
+            <Bucket id="G}-4fa61623:14485880526:-7be9">
                 <Name>LicenseTermTypeType.WAIVING_OR_LOWERING_PURCHASE_MINIMUMS</Name>
                 <Alias>WAIVING_OR_LOWERING_PURCHASE_MINIMUMS</Alias>
                 <Visible>true</Visible>
@@ -4956,13 +5202,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}395">
                     <Value>LicenseTermTypeType.WAIVING_OR_LOWERING_PURCHASE_MINIMUMS</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.WAIVING_OR_LOWERING_PURCHASE_MINIMUMS`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.WAIVING_OR_LOWERING_PURCHASE_MINIMUMS`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a45">
+            <Bucket id="G}-4fa61623:14485880526:-7be8">
                 <Name>LicenseTermTypeType.AUDIT_WAIVERS</Name>
                 <Alias>AUDIT_WAIVERS</Alias>
                 <Visible>true</Visible>
@@ -4972,13 +5218,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}396">
                     <Value>LicenseTermTypeType.AUDIT_WAIVERS</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.AUDIT_WAIVERS`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.AUDIT_WAIVERS`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a44">
+            <Bucket id="G}-4fa61623:14485880526:-7be7">
                 <Name>LicenseTermTypeType.CANCEL_AND_REPLACE</Name>
                 <Alias>CANCEL_AND_REPLACE</Alias>
                 <Visible>true</Visible>
@@ -4988,13 +5234,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}397">
                     <Value>LicenseTermTypeType.CANCEL_AND_REPLACE</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.CANCEL_AND_REPLACE`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.CANCEL_AND_REPLACE`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a43">
+            <Bucket id="G}-4fa61623:14485880526:-7be6">
                 <Name>LicenseTermTypeType.DIRECT_ORDER_FROM_COMPETITORS</Name>
                 <Alias>DIRECT_ORDER_FROM_COMPETITORS</Alias>
                 <Visible>true</Visible>
@@ -5004,13 +5250,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}398">
                     <Value>LicenseTermTypeType.DIRECT_ORDER_FROM_COMPETITORS</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.DIRECT_ORDER_FROM_COMPETITORS`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.DIRECT_ORDER_FROM_COMPETITORS`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a42">
+            <Bucket id="G}-4fa61623:14485880526:-7be5">
                 <Name>LicenseTermTypeType.RECIPROCAL_TRANSACTION</Name>
                 <Alias>RECIPROCAL_TRANSACTION</Alias>
                 <Visible>true</Visible>
@@ -5020,13 +5266,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}399">
                     <Value>LicenseTermTypeType.RECIPROCAL_TRANSACTION</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.RECIPROCAL_TRANSACTION`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.RECIPROCAL_TRANSACTION`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a41">
+            <Bucket id="G}-4fa61623:14485880526:-7be4">
                 <Name>LicenseTermTypeType.HOSTING</Name>
                 <Alias>HOSTING</Alias>
                 <Visible>true</Visible>
@@ -5036,13 +5282,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}400">
                     <Value>LicenseTermTypeType.HOSTING</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.HOSTING`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.HOSTING`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a40">
+            <Bucket id="G}-4fa61623:14485880526:-7be3">
                 <Name>LicenseTermTypeType.HOSTING_RIGHTS</Name>
                 <Alias>HOSTING_RIGHTS</Alias>
                 <Visible>true</Visible>
@@ -5052,13 +5298,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}401">
                     <Value>LicenseTermTypeType.HOSTING_RIGHTS</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.HOSTING_RIGHTS`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.HOSTING_RIGHTS`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a3f">
+            <Bucket id="G}-4fa61623:14485880526:-7be2">
                 <Name>LicenseTermTypeType.NDA</Name>
                 <Alias>NDA</Alias>
                 <Visible>true</Visible>
@@ -5068,13 +5314,13 @@
                 <Excluded>false</Excluded>
                 <Expression id="L}402">
                     <Value>LicenseTermTypeType.NDA</Value>
-                    <ResolvedValue>`G}52ef8f9f:1458062d2c9:-7a4e`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.NDA`</ResolvedValue>
+                    <ResolvedValue>`G}-4fa61623:14485880526:-7bf1`.`J}public static final com.mycompany.ns.salesquote.LicenseTermTypeType com.mycompany.ns.salesquote.LicenseTermTypeType.NDA`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Bucket>
-            <Bucket id="G}52ef8f9f:1458062d2c9:-7a3e">
+            <Bucket id="G}-4fa61623:14485880526:-7be1">
                 <Name>null</Name>
                 <Alias>null</Alias>
                 <Visible>true</Visible>
@@ -5094,10 +5340,160 @@
             <Excluded>false</Excluded>
             <ValidationUpdateNumber>4</ValidationUpdateNumber>
         </BucketSet>
+        <BucketSet id="G}68d0cef3:14488d90874:-7c32">
+            <Name>DiscountBuckets</Name>
+            <Alias>DiscountBuckets</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>33</CreationUpdateNumber>
+            <IDofType>J}double</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>double</Type>
+            <Form>Range</Form>
+            <Bucket id="G}68d0cef3:14488d90874:-7c31">
+                <Name>&lt;.3</Name>
+                <Alias>&lt;.3</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>33</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>true</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}537">
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c30">
+                <Name>[.3...6)</Name>
+                <Alias>[.3...6)</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>35</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}542">
+                    <Value>.3</Value>
+                    <ResolvedValue>.3</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c2e">
+                <Name>[.6...9)</Name>
+                <Alias>[.6...9)</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>37</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}548">
+                    <Value>.6</Value>
+                    <ResolvedValue>.6</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c2f">
+                <Name>&gt;=.9</Name>
+                <Alias>&gt;=.9</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>36</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}545">
+                    <Value>.9</Value>
+                    <ResolvedValue>.9</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <CalendarForm>Date</CalendarForm>
+            <Excluded>false</Excluded>
+            <ValidationUpdateNumber>198</ValidationUpdateNumber>
+        </BucketSet>
+        <BucketSet id="G}68d0cef3:14488d90874:-7c28">
+            <Name>RevenueBuckets</Name>
+            <Alias>RevenueBuckets</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>46</CreationUpdateNumber>
+            <IDofType>J}double</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>double</Type>
+            <Form>Range</Form>
+            <Bucket id="G}68d0cef3:14488d90874:-7c27">
+                <Name>&lt;150000</Name>
+                <Alias>&lt;150000</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>46</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>true</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}552">
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c24">
+                <Name>[150000..550000)</Name>
+                <Alias>[150000..550000)</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>52</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}567">
+                    <Value>150000</Value>
+                    <ResolvedValue>150000</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c25">
+                <Name>[550000..1500000)</Name>
+                <Alias>[550000..1500000)</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>51</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}564">
+                    <Value>550000</Value>
+                    <ResolvedValue>550000</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <Bucket id="G}68d0cef3:14488d90874:-7c26">
+                <Name>&gt;=1500000</Name>
+                <Alias>&gt;=1500000</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>50</CreationUpdateNumber>
+                <Inclusive>true</Inclusive>
+                <Otherwise>false</Otherwise>
+                <Excluded>false</Excluded>
+                <Expression id="L}561">
+                    <Value>1500000</Value>
+                    <ResolvedValue>1500000</ResolvedValue>
+                    <IsConstant>true</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Bucket>
+            <CalendarForm>Date</CalendarForm>
+            <Excluded>false</Excluded>
+            <ValidationUpdateNumber>58</ValidationUpdateNumber>
+        </BucketSet>
         <SupportsXPathEnabled>false</SupportsXPathEnabled>
-        <DecisionFunction id="G}52ef8f9f:1458062d2c9:-7a34">
-            <Name>ApprovalRulesOrignal_DecisionService</Name>
-            <Alias>ApprovalRulesOrignal_DecisionService</Alias>
+        <DecisionFunction id="G}-4fa61623:14485880526:-7bd7">
+            <Name>ApprovalRules_DecisionService</Name>
+            <Alias>ApprovalRules_DecisionService</Alias>
             <unsavedTranslatedAlias>false</unsavedTranslatedAlias>
             <unsavedTranslatedDescription>false</unsavedTranslatedDescription>
             <Visible>true</Visible>
@@ -5105,7 +5501,7 @@
             <WebService>true</WebService>
             <CheckRuleFlow>true</CheckRuleFlow>
             <Stateless>true</Stateless>
-            <DecisionFunctionInput id="G}52ef8f9f:1458062d2c9:-7a33">
+            <DecisionFunctionInput id="G}-4fa61623:14485880526:-7bd6">
                 <Name>quote</Name>
                 <Alias>quote</Alias>
                 <unsavedTranslatedAlias>false</unsavedTranslatedAlias>
@@ -5120,10 +5516,10 @@
                 <CreationUpdateNumber>5</CreationUpdateNumber>
                 <unsavedTranslatedDescription>false</unsavedTranslatedDescription>
                 <Form>rule set</Form>
-                <Ruleset>Ruleset1</Ruleset>
-                <refID>G}52ef8f9f:1458062d2c9:-7a35</refID>
+                <Ruleset>Ruleset</Ruleset>
+                <refID>G}-4fa61623:14485880526:-7bd8</refID>
             </DecisionFunctionRuleSet>
-            <DecisionFunctionOutput id="G}52ef8f9f:1458062d2c9:-7a32">
+            <DecisionFunctionOutput id="G}-4fa61623:14485880526:-7bd5">
                 <Name>ApprovalFlow</Name>
                 <Alias>ApprovalFlow</Alias>
                 <unsavedTranslatedAlias>false</unsavedTranslatedAlias>
@@ -5134,25 +5530,693 @@
                 <List>false</List>
                 <Tree>false</Tree>
             </DecisionFunctionOutput>
-            <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+            <ValidationUpdateNumber>404</ValidationUpdateNumber>
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>8</UpdateNumber>
-        <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+        <UpdateNumber>402</UpdateNumber>
+        <ValidationUpdateNumber>404</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
-    <RuleSet id="G}52ef8f9f:1458062d2c9:-7a35">
-        <Name>Ruleset1</Name>
-        <Alias>Ruleset1</Alias>
-        <ValidationUpdateNumber>4</ValidationUpdateNumber>
+    <RuleSet id="G}-4fa61623:14485880526:-7bd8">
+        <Name>Ruleset</Name>
+        <Alias>Ruleset</Alias>
+        <Description>Made inactive.  Use decision table instead.</Description>
+        <ValidationUpdateNumber>404</ValidationUpdateNumber>
         <Customizable>true</Customizable>
         <Active>true</Active>
         <CalendarForm>DateTime</CalendarForm>
+        <Rule id="G}-4fa61623:14485880526:-7bd1">
+            <Name>Approvals</Name>
+            <Alias>Approvals</Alias>
+            <ValidationUpdateNumber>369</ValidationUpdateNumber>
+            <Priority>low</Priority>
+            <Customizable>true</Customizable>
+            <Active>false</Active>
+            <CalendarForm>DateTime</CalendarForm>
+            <Pattern id="L}476">
+                <Form>Fact Type</Form>
+                <FactType>QuoteRequestType</FactType>
+                <IDofFactType>J}com.mycompany.ns.salesquote.QuoteRequestType</IDofFactType>
+                <Connective>&amp;&amp;</Connective>
+                <TestForm>Simple</TestForm>
+                <Expression id="L}477">
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Operator>(for each case where)</Operator>
+                <SimpleTest id="L}480">
+                    <Expression id="L}481">
+                        <Value>QuoteRequestType.summary.effectiveDiscount</Value>
+                        <ResolvedValue>`L}476`.`J}com.mycompany.ns.salesquote.QuoteRequestType.{summary}`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{effectiveDiscount}`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterID>B}nil</ParameterID>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}482">
+                        <Value>0.3</Value>
+                        <ResolvedValue>0.3</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterID>B}nil</ParameterID>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <IDofOperator>B}&lt;=</IDofOperator>
+                    <Connective>&amp;&amp;</Connective>
+                    <Form>FormNotNested</Form>
+                </SimpleTest>
+                <FactPath>QuoteRequestType</FactPath>
+                <FactPathIDs>L}476</FactPathIDs>
+            </Pattern>
+            <ShowPatterns>false</ShowPatterns>
+            <TreeMode>false</TreeMode>
+            <Visible>true</Visible>
+            <Logical>false</Logical>
+            <Action id="L}494">
+                <Form>Assert New</Form>
+                <Target>ApprovalFlowType</Target>
+                <ResolvedTarget>`J}public com.mycompany.ns.salesquote.ApprovalFlowType()`</ResolvedTarget>
+                <Expression id="L}497">
+                    <Value>false</Value>
+                    <ResolvedValue>false</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}498">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}499">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>selfApproved</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}500">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}501">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}502">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>tier2Approvers</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+        </Rule>
+        <RuleSheet id="G}68d0cef3:14488d90874:-7c13">
+            <Name>ApprovalMatrix</Name>
+            <Alias>ApprovalMatrix</Alias>
+            <ValidationUpdateNumber>388</ValidationUpdateNumber>
+            <Priority>highest</Priority>
+            <Customizable>true</Customizable>
+            <Active>true</Active>
+            <CalendarForm>DateTime</CalendarForm>
+            <Pattern id="L}669">
+                <Form>Fact Type</Form>
+                <FactType>QuoteSummaryType</FactType>
+                <IDofFactType>J}com.mycompany.ns.salesquote.QuoteSummaryType</IDofFactType>
+                <Connective>&amp;&amp;</Connective>
+                <TestForm>Simple</TestForm>
+                <Expression id="L}670">
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Operator>(for each case where)</Operator>
+                <FactPath>QuoteSummaryType</FactPath>
+                <FactPathIDs>L}669</FactPathIDs>
+            </Pattern>
+            <ShowPatterns>false</ShowPatterns>
+            <TreeMode>false</TreeMode>
+            <Visible>true</Visible>
+            <Logical>false</Logical>
+            <Dimension id="L}657">
+                <Value>QuoteSummaryType.effectiveDiscount &lt;= preApprovedDiscounty</Value>
+                <ResolvedValue>`L}669`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{effectiveDiscount}` &lt;= `G}68d0cef3:14488d90874:-7c36`</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>false</Customizable>
+                <IDofSharedBucketSet>B}bbs</IDofSharedBucketSet>
+                <DimensionNode id="L}658">
+                    <BucketIDTable>B}bbtrue</BucketIDTable>
+                    <Values>true</Values>
+                    <ParentDimensionNode>B}nil</ParentDimensionNode>
+                    <ChildDimensionNodes>L}676</ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}757">
+                    <BucketIDTable>B}bbfalse</BucketIDTable>
+                    <Values>false</Values>
+                    <ParentDimensionNode>B}nil</ParentDimensionNode>
+                    <ChildDimensionNodes>L}719 L}738 L}758 L}942</ChildDimensionNodes>
+                </DimensionNode>
+                <PrivateBucketSet id="G}68d0cef3:14488d90874:-7c0d">
+                    <Visible>true</Visible>
+                    <CreationUpdateNumber>79</CreationUpdateNumber>
+                    <IDofType>B}nil</IDofType>
+                    <ListContentID>B}nil</ListContentID>
+                    <Form>Default</Form>
+                    <Bucket id="G}68d0cef3:14488d90874:-7c0c">
+                        <Name>otherwise</Name>
+                        <Alias>otherwise</Alias>
+                        <Visible>true</Visible>
+                        <CreationUpdateNumber>79</CreationUpdateNumber>
+                        <Inclusive>true</Inclusive>
+                        <Otherwise>true</Otherwise>
+                        <Excluded>false</Excluded>
+                        <Expression id="L}660">
+                            <IsConstant>true</IsConstant>
+                            <ParameterID>B}nil</ParameterID>
+                            <Customizable>false</Customizable>
+                        </Expression>
+                    </Bucket>
+                    <CalendarForm>Date</CalendarForm>
+                    <Excluded>false</Excluded>
+                    <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+                </PrivateBucketSet>
+                <SharedBucketSet>boolean</SharedBucketSet>
+            </Dimension>
+            <Dimension id="L}675">
+                <Value>QuoteSummaryType.effectiveDiscount</Value>
+                <ResolvedValue>`L}669`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{effectiveDiscount}`</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>false</Customizable>
+                <IDofSharedBucketSet>G}68d0cef3:14488d90874:-7c32</IDofSharedBucketSet>
+                <DimensionNode id="L}676">
+                    <BucketIDTable></BucketIDTable>
+                    <Values>-</Values>
+                    <ParentDimensionNode>L}658</ParentDimensionNode>
+                    <ChildDimensionNodes>L}683</ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}719">
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c31 G}68d0cef3:14488d90874:-7c30</BucketIDTable>
+                    <Values>&lt;.3 [.3...6)</Values>
+                    <ParentDimensionNode>L}757</ParentDimensionNode>
+                    <ChildDimensionNodes>L}720</ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}738">
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c2e</BucketIDTable>
+                    <Values>[.6...9)</Values>
+                    <ParentDimensionNode>L}757</ParentDimensionNode>
+                    <ChildDimensionNodes>L}739</ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}758">
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c2e G}68d0cef3:14488d90874:-7c2f</BucketIDTable>
+                    <Values>[.6...9) &gt;=.9</Values>
+                    <ParentDimensionNode>L}757</ParentDimensionNode>
+                    <ChildDimensionNodes>L}759</ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}942">
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c2f</BucketIDTable>
+                    <Values>&gt;=.9</Values>
+                    <ParentDimensionNode>L}757</ParentDimensionNode>
+                    <ChildDimensionNodes>L}943</ChildDimensionNodes>
+                </DimensionNode>
+                <PrivateBucketSet id="G}68d0cef3:14488d90874:-7c0a">
+                    <Visible>true</Visible>
+                    <CreationUpdateNumber>83</CreationUpdateNumber>
+                    <IDofType>J}double</IDofType>
+                    <ListContentID>B}nil</ListContentID>
+                    <Type>double</Type>
+                    <Form>LOV</Form>
+                    <Bucket id="G}68d0cef3:14488d90874:-7c09">
+                        <Name>otherwise</Name>
+                        <Alias>otherwise</Alias>
+                        <Visible>true</Visible>
+                        <CreationUpdateNumber>83</CreationUpdateNumber>
+                        <Inclusive>true</Inclusive>
+                        <Otherwise>true</Otherwise>
+                        <Excluded>false</Excluded>
+                        <Expression id="L}677">
+                            <IsConstant>true</IsConstant>
+                            <ParameterID>B}nil</ParameterID>
+                            <Customizable>false</Customizable>
+                        </Expression>
+                    </Bucket>
+                    <CalendarForm>Date</CalendarForm>
+                    <Excluded>false</Excluded>
+                    <ValidationUpdateNumber>88</ValidationUpdateNumber>
+                </PrivateBucketSet>
+                <SharedBucketSet>DiscountBuckets</SharedBucketSet>
+            </Dimension>
+            <Dimension id="L}682">
+                <Value>QuoteSummaryType.totalNetRevenue</Value>
+                <ResolvedValue>`L}669`.`J}com.mycompany.ns.salesquote.QuoteSummaryType.{totalNetRevenue}`</ResolvedValue>
+                <IsConstant>false</IsConstant>
+                <ParameterID>B}nil</ParameterID>
+                <Customizable>false</Customizable>
+                <IDofSharedBucketSet>G}68d0cef3:14488d90874:-7c28</IDofSharedBucketSet>
+                <DimensionNode id="L}683">
+                    <BucketIDTable></BucketIDTable>
+                    <Values>-</Values>
+                    <ParentDimensionNode>L}676</ParentDimensionNode>
+                    <ChildDimensionNodes></ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}720">
+                    <BucketIDTable></BucketIDTable>
+                    <Values>-</Values>
+                    <ParentDimensionNode>L}719</ParentDimensionNode>
+                    <ChildDimensionNodes></ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}739">
+                    <BucketIDTable></BucketIDTable>
+                    <Values>-</Values>
+                    <ParentDimensionNode>L}738</ParentDimensionNode>
+                    <ChildDimensionNodes></ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}759">
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c25 G}68d0cef3:14488d90874:-7c26</BucketIDTable>
+                    <Values>[550000..1500000) &gt;=1500000</Values>
+                    <ParentDimensionNode>L}758</ParentDimensionNode>
+                    <ChildDimensionNodes></ChildDimensionNodes>
+                </DimensionNode>
+                <DimensionNode id="L}943">
+                    <BucketIDTable>G}68d0cef3:14488d90874:-7c27 G}68d0cef3:14488d90874:-7c24</BucketIDTable>
+                    <Values>&lt;150000 [150000..550000)</Values>
+                    <ParentDimensionNode>L}942</ParentDimensionNode>
+                    <ChildDimensionNodes></ChildDimensionNodes>
+                </DimensionNode>
+                <PrivateBucketSet id="G}68d0cef3:14488d90874:-7c08">
+                    <Visible>true</Visible>
+                    <CreationUpdateNumber>84</CreationUpdateNumber>
+                    <IDofType>J}double</IDofType>
+                    <ListContentID>B}nil</ListContentID>
+                    <Type>double</Type>
+                    <Form>LOV</Form>
+                    <Bucket id="G}68d0cef3:14488d90874:-7c07">
+                        <Name>otherwise</Name>
+                        <Alias>otherwise</Alias>
+                        <Visible>true</Visible>
+                        <CreationUpdateNumber>84</CreationUpdateNumber>
+                        <Inclusive>true</Inclusive>
+                        <Otherwise>true</Otherwise>
+                        <Excluded>false</Excluded>
+                        <Expression id="L}684">
+                            <IsConstant>true</IsConstant>
+                            <ParameterID>B}nil</ParameterID>
+                            <Customizable>false</Customizable>
+                        </Expression>
+                    </Bucket>
+                    <CalendarForm>Date</CalendarForm>
+                    <Excluded>false</Excluded>
+                    <ValidationUpdateNumber>87</ValidationUpdateNumber>
+                </PrivateBucketSet>
+                <SharedBucketSet>RevenueBuckets</SharedBucketSet>
+            </Dimension>
+            <DTAction id="L}875">
+                <Form>Assert New</Form>
+                <Target>ApprovalFlowType</Target>
+                <ResolvedTarget>`J}public com.mycompany.ns.salesquote.ApprovalFlowType()`</ResolvedTarget>
+                <Expression id="L}882">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                    <DTActionParameterName>businessPracticesReviewNeeded</DTActionParameterName>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}883">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                    <DTActionParameterName>numberOfTier3Levels</DTActionParameterName>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}884">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>selfApproved</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                    <DTActionParameterName>selfApproved</DTActionParameterName>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}885">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                    <DTActionParameterName>tier1ApprovalNeeded</DTActionParameterName>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}886">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                    <DTActionParameterName>tier2ApprovalNeeded</DTActionParameterName>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}887">
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>tier2Approvers</ParameterAlias>
+                    <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                    <DTActionParameterName>tier2Approvers</DTActionParameterName>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <AlwaysSelected>false</AlwaysSelected>
+                <DTActionNode id="L}876">
+                    <Selected>true</Selected>
+                    <Expression id="L}902">
+                        <Value>tier2Approvers-base</Value>
+                        <ResolvedValue>`G}68d0cef3:14488d90874:-7c35`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2Approvers</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                        <DTActionParameterName>tier2Approvers</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}903">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier2ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}904">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier1ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}905">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>selfApproved</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                        <DTActionParameterName>selfApproved</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}906">
+                        <Value>0</Value>
+                        <ResolvedValue>0</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                        <DTActionParameterName>numberOfTier3Levels</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}907">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                        <DTActionParameterName>businessPracticesReviewNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </DTActionNode>
+                <DTActionNode id="L}877">
+                    <Selected>true</Selected>
+                    <Expression id="L}908">
+                        <Value>tier2Approvers-base</Value>
+                        <ResolvedValue>`G}68d0cef3:14488d90874:-7c35`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2Approvers</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                        <DTActionParameterName>tier2Approvers</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}909">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier2ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}910">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier1ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}911">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>selfApproved</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                        <DTActionParameterName>selfApproved</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}912">
+                        <Value>1</Value>
+                        <ResolvedValue>1</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                        <DTActionParameterName>numberOfTier3Levels</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}913">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                        <DTActionParameterName>businessPracticesReviewNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </DTActionNode>
+                <DTActionNode id="L}878">
+                    <Selected>true</Selected>
+                    <Expression id="L}914">
+                        <Value>tier2Approvers-base</Value>
+                        <ResolvedValue>`G}68d0cef3:14488d90874:-7c35`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2Approvers</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                        <DTActionParameterName>tier2Approvers</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}915">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier2ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}916">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier1ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}917">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>selfApproved</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                        <DTActionParameterName>selfApproved</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}918">
+                        <Value>1</Value>
+                        <ResolvedValue>1</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                        <DTActionParameterName>numberOfTier3Levels</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}919">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                        <DTActionParameterName>businessPracticesReviewNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </DTActionNode>
+                <DTActionNode id="L}879">
+                    <Selected>true</Selected>
+                    <Expression id="L}920">
+                        <Value>tier2Approvers-high</Value>
+                        <ResolvedValue>`G}68d0cef3:14488d90874:-7c34`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2Approvers</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                        <DTActionParameterName>tier2Approvers</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}921">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier2ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}922">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier1ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}923">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>selfApproved</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                        <DTActionParameterName>selfApproved</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}924">
+                        <Value>2</Value>
+                        <ResolvedValue>2</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                        <DTActionParameterName>numberOfTier3Levels</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}925">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                        <DTActionParameterName>businessPracticesReviewNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </DTActionNode>
+                <DTActionNode id="L}945">
+                    <Selected>true</Selected>
+                    <Expression id="L}960">
+                        <Value>tier2Approvers-base</Value>
+                        <ResolvedValue>`G}68d0cef3:14488d90874:-7c35`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2Approvers</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2Approvers}</ParameterID>
+                        <DTActionParameterName>tier2Approvers</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}961">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier2ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier2ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier2ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}962">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>tier1ApprovalNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{tier1ApprovalNeeded}</ParameterID>
+                        <DTActionParameterName>tier1ApprovalNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}963">
+                        <Value>false</Value>
+                        <ResolvedValue>false</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>selfApproved</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{selfApproved}</ParameterID>
+                        <DTActionParameterName>selfApproved</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}964">
+                        <Value>2</Value>
+                        <ResolvedValue>2</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>numberOfTier3Levels</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{numberOfTier3Levels}</ParameterID>
+                        <DTActionParameterName>numberOfTier3Levels</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                    <Expression id="L}965">
+                        <Value>true</Value>
+                        <ResolvedValue>true</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>businessPracticesReviewNeeded</ParameterAlias>
+                        <ParameterID>J}com.mycompany.ns.salesquote.ApprovalFlowType.{businessPracticesReviewNeeded}</ParameterID>
+                        <DTActionParameterName>businessPracticesReviewNeeded</DTActionParameterName>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </DTActionNode>
+            </DTAction>
+            <DTRule id="L}659">
+                <Override></Override>
+                <RunBefore></RunBefore>
+                <NoConflict></NoConflict>
+                <OverriddenBy></OverriddenBy>
+                <RunAfter></RunAfter>
+                <CreationUpdateNumber>79</CreationUpdateNumber>
+            </DTRule>
+            <DTRule id="L}721">
+                <Override></Override>
+                <RunBefore></RunBefore>
+                <NoConflict></NoConflict>
+                <OverriddenBy></OverriddenBy>
+                <RunAfter></RunAfter>
+                <CreationUpdateNumber>95</CreationUpdateNumber>
+            </DTRule>
+            <DTRule id="L}740">
+                <Override></Override>
+                <RunBefore></RunBefore>
+                <NoConflict></NoConflict>
+                <OverriddenBy>L}760</OverriddenBy>
+                <RunAfter></RunAfter>
+                <CreationUpdateNumber>99</CreationUpdateNumber>
+            </DTRule>
+            <DTRule id="L}760">
+                <Override>L}740</Override>
+                <RunBefore></RunBefore>
+                <NoConflict></NoConflict>
+                <OverriddenBy></OverriddenBy>
+                <RunAfter></RunAfter>
+                <CreationUpdateNumber>105</CreationUpdateNumber>
+            </DTRule>
+            <DTRule id="L}944">
+                <Override></Override>
+                <RunBefore></RunBefore>
+                <NoConflict></NoConflict>
+                <OverriddenBy></OverriddenBy>
+                <RunAfter></RunAfter>
+                <CreationUpdateNumber>279</CreationUpdateNumber>
+            </DTRule>
+            <AllowGaps>true</AllowGaps>
+            <ConflictPolicy>manual</ConflictPolicy>
+            <OrderRulesByBucket>true</OrderRulesByBucket>
+        </RuleSheet>
         <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
-    <ValidationUpdateNumber>-1</ValidationUpdateNumber>
-    <UpdateNumber>8</UpdateNumber>
+    <ValidationUpdateNumber>405</ValidationUpdateNumber>
+    <UpdateNumber>405</UpdateNumber>
     <ResourceBundle>ApprovalRulesOrignalTranslations</ResourceBundle>
 </RuleDictionary>
