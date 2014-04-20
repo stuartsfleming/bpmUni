@@ -15,9 +15,7 @@
 	mode="active"
 	state="on">
  <import namespace="http://xmlns.oracle.com/bpel/workflow/taskService" location="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl" importType="wsdl"/>
- <import namespace="http://xmlns.oracle.com/ApprovalRulesOrignal/ApprovalRulesOrignal_DecisionService" location="ApprovalRulesOrignal_DecisionService.wsdl" importType="wsdl"/>
- <import namespace="http://xmlns.oracle.com/ApprovalRuleNewest/ApprovalRuleNewest_DecisionService" location="ApprovalRuleNewest_DecisionService.wsdl" importType="wsdl"/>
- <import namespace="http://xmlns.oracle.com/aaa/aaa_DecisionService" location="aaa_DecisionService.wsdl" importType="wsdl"/>
+ <import namespace="http://xmlns.oracle.com/OracleRules/OracleRules_DecisionService_1" location="OracleRules_DecisionService_1.wsdl" importType="wsdl"/>
  <component name="SalesQuote">   
 		<implementation.bpmn src="processes/SalesQuote.bpmn"/>
   <property name="bpel.config.oneWayDeliveryPolicy" type="xs:string" many="false">sync</property>
@@ -38,14 +36,8 @@
  <component name="FinalizeTerms">
   <implementation.workflow src="FinalizeTerms.task"/>
  </component>
- <component name="ApprovalRulesOrignal">
-  <implementation.decision src="ApprovalRulesOrignal.decs"/>
- </component>
- <component name="ApprovalRuleNewest">
-  <implementation.decision src="ApprovalRuleNewest.decs"/>
- </component>
- <component name="aaa">
-  <implementation.decision src="aaa.decs"/>
+ <component name="OracleRules">
+  <implementation.decision src="OracleRules.decs"/>
  </component>
  <wire>
   <source.uri>SalesQuote/HumanTasks.EnterQuoteDetails.reference</source.uri>
@@ -66,13 +58,5 @@
  <wire>
   <source.uri>SalesQuote/HumanTasks.FinalizeTerms.reference</source.uri>
   <target.uri>FinalizeTerms/TaskService</target.uri>
- </wire>
- <wire>
-  <source.uri>SalesQuote/Rules.SSFBpmUni.Aaa.aaa_DecisionService.reference</source.uri>
-  <target.uri>aaa/aaa_DecisionService</target.uri>
- </wire>
-  <wire>
-  <source.uri>SalesQuote/Rules.SSFBpmUni.ApprovalRulesOrignal.ApprovalRulesOrignal_DecisionService.reference</source.uri>
-  <target.uri>ApprovalRulesOrignal/ApprovalRulesOrignal_DecisionService</target.uri>
  </wire>
 </composite>

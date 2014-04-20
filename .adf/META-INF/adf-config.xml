@@ -20,7 +20,8 @@
       <persistence-config>
         <metadata-namespaces>
           <namespace path="/deployed-composites/default" metadata-store-usage="mstore-usage_6"/>
-          <namespace path="/soa/shared" metadata-store-usage="mstore-usage_7"/>
+          <namespace path="/soa/shared" metadata-store-usage="mstore-usage_9"/>
+          <namespace path="/bpm/applications" metadata-store-usage="mstore-usage_10"/>
         </metadata-namespaces>
         <metadata-store-usages>
           <metadata-store-usage id="mstore-usage_6">
@@ -30,10 +31,17 @@
               <property name="partition-name" value="soa-infra"/>
             </metadata-store>
           </metadata-store-usage>
-          <metadata-store-usage id="mstore-usage_7">
+          <metadata-store-usage id="mstore-usage_9">
             <metadata-store class-name="oracle.mds.persistence.stores.file.FileMetadataStore">
               <property name="metadata-path" value="${oracle.home}/integration"/>
               <property name="partition-name" value="seed"/>
+            </metadata-store>
+          </metadata-store-usage>
+          <metadata-store-usage id="mstore-usage_10">
+            <metadata-store class-name="oracle.mds.persistence.stores.db.DBMetadataStore">
+              <property name="jdbc-userid" value="DEV_MDS"/>
+              <property name="jdbc-url" value="jdbc:oracle:thin:@harumi-pc:1521:ssf"/>
+              <property name="partition-name" value="obpm"/>
             </metadata-store>
           </metadata-store-usage>
         </metadata-store-usages>
