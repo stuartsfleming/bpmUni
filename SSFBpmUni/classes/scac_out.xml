@@ -2,6 +2,26 @@
 <Faults>
    <Fault>
       <severity>warning</severity>
+      <loc>/ns:composite/ns:component[@name='ApprovalRulesOrignal/ApprovalRulesOrignal_DecisionService']</loc>
+      <line/>
+      <col/>
+      <file>C:\JDeveloper\mywork\bpmUniversity\SSFBpmUni\composite.xml</file>
+      <name>C:\JDeveloper\mywork\bpmUniversity\SSFBpmUni\composite.xml</name>
+      <fix/>
+      <msg>The service "ApprovalRulesOrignal_DecisionService" exposed by component "ApprovalRulesOrignal" is not wired to/used by any other component.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:component[@name='ApprovalRuleNewest/ApprovalRuleNewest_DecisionService']</loc>
+      <line/>
+      <col/>
+      <file>C:\JDeveloper\mywork\bpmUniversity\SSFBpmUni\composite.xml</file>
+      <name>C:\JDeveloper\mywork\bpmUniversity\SSFBpmUni\composite.xml</name>
+      <fix/>
+      <msg>The service "ApprovalRuleNewest_DecisionService" exposed by component "ApprovalRuleNewest" is not wired to/used by any other component.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
       <loc/>
       <line/>
       <col/>
@@ -15,10 +35,40 @@
       <loc/>
       <line/>
       <col/>
+      <file>/processes/SalesQuote.bpmn</file>
+      <name>/processes/SalesQuote.bpmn</name>
+      <fix/>
+      <msg>The condition in Sequence Flow (ExclusiveGateway3 To ApprovalRuleNewest) is empty.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>SSFBpmUni/oracle/rules/SSFBpmUni/ApprovalRulesOrignal.rules</loc>
+      <line/>
+      <col/>
+      <file/>
+      <name/>
+      <fix/>
+      <msg>Rule Dictionary ApprovalRulesOrignal not found.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
       <file>ApproveDeal.task</file>
       <name>ApproveDeal.task</name>
       <fix/>
       <msg>Error assignee not specified</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>SSFBpmUni/oracle/rules/SSFBpmUni/ApprovalRuleNewest.rules</loc>
+      <line/>
+      <col/>
+      <file/>
+      <name/>
+      <fix/>
+      <msg>Rule Dictionary ApprovalRuleNewest not found.</msg>
    </Fault>
    <Fault>
       <severity>warning</severity>

@@ -1,8 +1,42 @@
-Apr 20, 2014 8:43:46 AM oracle.mds
+Apr 20, 2014 3:12:55 PM oracle.security.jps.util.JpsUtil disableAudit
+INFO: JpsUtil: isAuditDisabled set to true
+Apr 20, 2014 3:12:55 PM oracle.security.jps.util.JpsUtil disableAudit
+INFO: JpsUtil: isAuditDisabled set to false
+Apr 20, 2014 3:12:57 PM oracle.mds
 NOTIFICATION: PManager instance is created without multitenancy support as JVM flag "oracle.multitenant.enabled" is not set to enable multitenancy support.
-Apr 20, 2014 8:43:46 AM oracle.security.jps.internal.config.xml.XmlConfigurationFactory initDefaultConfiguration
+Apr 20, 2014 3:12:57 PM oracle.security.jps.internal.config.xml.XmlConfigurationFactory initDefaultConfiguration
 SEVERE: java.io.FileNotFoundException: .\config\jps-config.xml (The system cannot find the path specified)
-Apr 20, 2014 8:43:46 AM oracle.mds
+Apr 20, 2014 3:12:57 PM oracle.mds
 NOTIFICATION: Auditing is disabled for component MDS.
-Apr 20, 2014 8:43:47 AM oracle.fabric.common.wsdl.SchemaManager isIncrementalBuildSupported
+Apr 20, 2014 3:12:58 PM oracle.fabric.common.wsdl.SchemaManager isIncrementalBuildSupported
 INFO: XMLSchema incremental build enabled.
+Apr 20, 2014 3:13:04 PM oracle.bpel.services.common.ServicesLogger __logException
+SEVERE: <.> 
+java.lang.NullPointerException
+	at oracle.bpel.services.rules.fabric.ComponentModelValidator.validate(ComponentModelValidator.java:203)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at oracle.soa.scac.rules.DecisionComponentValidator.validate(DecisionComponentValidator.java:118)
+	at oracle.soa.scac.ValidateComposite.validateComponentTypeServicesReferences(ValidateComposite.java:1051)
+	at oracle.soa.scac.ValidateComposite.doValidation0(ValidateComposite.java:502)
+	at oracle.soa.scac.ValidateComposite.doValidation(ValidateComposite.java:481)
+	at oracle.soa.scac.ValidateComposite.run0(ValidateComposite.java:206)
+	at oracle.soa.scac.ValidateComposite.run(ValidateComposite.java:187)
+	at oracle.soa.scac.ValidateComposite.main(ValidateComposite.java:179)
+Apr 20, 2014 3:13:04 PM oracle.bpel.services.common.ServicesLogger __logException
+SEVERE: <.> 
+java.lang.NullPointerException
+	at oracle.bpel.services.rules.fabric.ComponentModelValidator.validate(ComponentModelValidator.java:203)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at oracle.soa.scac.rules.DecisionComponentValidator.validate(DecisionComponentValidator.java:118)
+	at oracle.soa.scac.ValidateComposite.validateComponentTypeServicesReferences(ValidateComposite.java:1051)
+	at oracle.soa.scac.ValidateComposite.doValidation0(ValidateComposite.java:502)
+	at oracle.soa.scac.ValidateComposite.doValidation(ValidateComposite.java:481)
+	at oracle.soa.scac.ValidateComposite.run0(ValidateComposite.java:206)
+	at oracle.soa.scac.ValidateComposite.run(ValidateComposite.java:187)
+	at oracle.soa.scac.ValidateComposite.main(ValidateComposite.java:179)
