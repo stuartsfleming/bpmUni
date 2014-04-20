@@ -2,7 +2,7 @@
 <measurements xmlns="http://xmlns.oracle.com/bpm/analytics/measurement">
     <compositeDN>SSFBpmUni</compositeDN>
     <measurementElements>
-        <measurementElement name="SSFBpmUni" type="COMPOSITE" enabled="true">
+        <measurementElement enabled="true" type="COMPOSITE" name="SSFBpmUni">
             <elementSelection>INTERACTIVE</elementSelection>
             <elementStates>
                 <elementState>ALL</elementState>
