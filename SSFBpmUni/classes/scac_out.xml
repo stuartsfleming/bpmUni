@@ -41,16 +41,6 @@
       <msg>Error assignee not specified</msg>
    </Fault>
    <Fault>
-      <severity>error</severity>
-      <loc>ApprovalRules</loc>
-      <line/>
-      <col/>
-      <file/>
-      <name/>
-      <fix/>
-      <msg>Rule Dictionary ApprovalRules is invalid.</msg>
-   </Fault>
-   <Fault>
       <severity>warning</severity>
       <loc/>
       <line/>
