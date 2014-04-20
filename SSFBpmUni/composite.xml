@@ -15,7 +15,7 @@
 	mode="active"
 	state="on">
  <import namespace="http://xmlns.oracle.com/bpel/workflow/taskService" location="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl" importType="wsdl"/>
- <import namespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_DecisionService" location="ApprovalRules_DecisionService.wsdl" importType="wsdl"/>
+ <import namespace="http://xmlns.oracle.com/ArrovalOrig/ArrovalOrig_DecisionService" location="ArrovalOrig_DecisionService.wsdl" importType="wsdl"/>
  <component name="SalesQuote">   
 		<implementation.bpmn
 			src="processes/SalesQuote.bpmn"/>
@@ -37,8 +37,8 @@
  <component name="FinalizeTerms">
   <implementation.workflow src="FinalizeTerms.task"/>
  </component>
- <component name="ApprovalRules">
-  <implementation.decision src="ApprovalRules.decs"/>
+ <component name="ArrovalOrig">
+  <implementation.decision src="ArrovalOrig.decs"/>
  </component>
  <wire>
   <source.uri>SalesQuote/HumanTasks.EnterQuoteDetails.reference</source.uri>
@@ -61,7 +61,7 @@
   <target.uri>FinalizeTerms/TaskService</target.uri>
  </wire>
  <wire>
-  <source.uri>SalesQuote/Rules.SSFBpmUni.ApprovalRules.ApprovalRules_DecisionService.reference</source.uri>
-  <target.uri>ApprovalRules/ApprovalRules_DecisionService</target.uri>
+  <source.uri>SalesQuote/Rules.SSFBpmUni.ArrovalOrig.ArrovalOrig_DecisionService.reference</source.uri>
+  <target.uri>ArrovalOrig/ArrovalOrig_DecisionService</target.uri>
  </wire>
 </composite>
