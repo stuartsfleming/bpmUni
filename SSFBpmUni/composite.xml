@@ -16,6 +16,8 @@
 	state="on">
  <import namespace="http://xmlns.oracle.com/bpel/workflow/taskService" location="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl" importType="wsdl"/>
  <import namespace="http://xmlns.oracle.com/ApprovalRulesOrignal/ApprovalRulesOrignal_DecisionService" location="ApprovalRulesOrignal_DecisionService.wsdl" importType="wsdl"/>
+ <import namespace="http://xmlns.oracle.com/Atester/Atester_DecisionService" location="Atester_DecisionService.wsdl" importType="wsdl"/>
+ <import namespace="http://xmlns.oracle.com/ApprovalRuleNewest/ApprovalRuleNewest_DecisionService" location="ApprovalRuleNewest_DecisionService.wsdl" importType="wsdl"/>
  <component name="SalesQuote">   
 		<implementation.bpmn
 			src="processes/SalesQuote.bpmn"/>
@@ -40,6 +42,12 @@
  <component name="ApprovalRulesOrignal">
   <implementation.decision src="ApprovalRulesOrignal.decs"/>
  </component>
+ <component name="Atester">
+  <implementation.decision src="Atester.decs"/>
+ </component>
+ <component name="ApprovalRuleNewest">
+  <implementation.decision src="ApprovalRuleNewest.decs"/>
+ </component>
  <wire>
   <source.uri>SalesQuote/HumanTasks.EnterQuoteDetails.reference</source.uri>
   <target.uri>EnterQuoteDetails/TaskService</target.uri>
@@ -61,7 +69,11 @@
   <target.uri>FinalizeTerms/TaskService</target.uri>
  </wire>
  <wire>
-  <source.uri>SalesQuote/Rules.SSFBpmUni.ApprovalRulesOrignal.ApprovalRulesOrignal_DecisionService.reference</source.uri>
-  <target.uri>ApprovalRulesOrignal/ApprovalRulesOrignal_DecisionService</target.uri>
+  <source.uri>SalesQuote/Rules.SSFBpmUni.Atester.Atester_DecisionService.reference</source.uri>
+  <target.uri>Atester/Atester_DecisionService</target.uri>
+ </wire>
+ <wire>
+  <source.uri>SalesQuote/Rules.SSFBpmUni.ApprovalRuleNewest.ApprovalRuleNewest_DecisionService.reference</source.uri>
+  <target.uri>ApprovalRuleNewest/ApprovalRuleNewest_DecisionService</target.uri>
  </wire>
 </composite>
