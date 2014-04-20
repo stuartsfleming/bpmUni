@@ -32,7 +32,4 @@
   <reference name="Rules.SSFBpmUni.Atester.Atester_DecisionService.reference" ui:wsdlLocation="Atester_DecisionService.wsdl">
     <interface.wsdl interface="http://xmlns.oracle.com/Atester/Atester_DecisionService#wsdl.interface(IDecisionService)"/>
   </reference>
-  <reference name="Rules.SSFBpmUni.ApprovalRuleNewest.ApprovalRuleNewest_DecisionService.reference" ui:wsdlLocation="ApprovalRuleNewest_DecisionService.wsdl">
-    <interface.wsdl interface="http://xmlns.oracle.com/ApprovalRuleNewest/ApprovalRuleNewest_DecisionService#wsdl.interface(IDecisionService)"/>
-  </reference>
 </componentType>

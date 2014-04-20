@@ -72,8 +72,4 @@
   <source.uri>SalesQuote/Rules.SSFBpmUni.Atester.Atester_DecisionService.reference</source.uri>
   <target.uri>Atester/Atester_DecisionService</target.uri>
  </wire>
- <wire>
-  <source.uri>SalesQuote/Rules.SSFBpmUni.ApprovalRuleNewest.ApprovalRuleNewest_DecisionService.reference</source.uri>
-  <target.uri>ApprovalRuleNewest/ApprovalRuleNewest_DecisionService</target.uri>
- </wire>
 </composite>

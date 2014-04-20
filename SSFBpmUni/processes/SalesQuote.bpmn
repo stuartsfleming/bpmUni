@@ -1017,7 +1017,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="213" y="277"/>
+                        <ns5:Position x="233" y="269"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -1120,38 +1120,15 @@
                         <ns5:StringFeature value="Begin Level" name="level"/>
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                     </ns5:FeatureSet>
-                    <ns5:BusinessRuleTaskData businessRuleName="Rules.SSFBpmUni.ApprovalRuleNewest" functionName="ApprovalRuleNewest_DecisionService"/>
                     <ns5:LogHandlers/>
                 </ns5:OracleExtensions>
             </extensionElements>
-            <ioSpecification>
-                <dataInput name="quote" id="quote">
-                    <extensionElements>
-                        <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://www.mycompany.com/ns/salesquote" element="QuoteRequest" isArray="false"/>
-                        </ns5:OracleExtensions>
-                    </extensionElements>
-                </dataInput>
-                <dataOutput name="approvalFlow" id="approvalFlow">
-                    <extensionElements>
-                        <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://www.mycompany.com/ns/salesquote" element="ApprovalFlow" isArray="false"/>
-                        </ns5:OracleExtensions>
-                    </extensionElements>
-                </dataOutput>
-                <inputSet id="ACT9642798823190_uniqueInputSet">
-                    <dataInputRefs>quote</dataInputRefs>
-                </inputSet>
-                <outputSet id="ACT9642798823190_uniqueOutputSet">
-                    <dataOutputRefs>approvalFlow</dataOutputRefs>
-                </outputSet>
-            </ioSpecification>
+            <ioSpecification/>
             <dataInputAssociation>
                 <extensionElements>
                     <ns5:OracleExtensions/>
                 </extensionElements>
                 <sourceRef>quote</sourceRef>
-                <targetRef>quote</targetRef>
                 <assignment>
                     <extensionElements>
                         <ns5:OracleExtensions>
@@ -1178,7 +1155,6 @@
                 <extensionElements>
                     <ns5:OracleExtensions/>
                 </extensionElements>
-                <sourceRef>approvalFlow</sourceRef>
                 <targetRef>ApprovalFlow</targetRef>
                 <assignment>
                     <extensionElements>
