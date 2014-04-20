@@ -29,4 +29,7 @@
     <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
                     callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
   </reference>
+  <reference name="Rules.SSFBpmUni.ApprovalRules.ApprovalRules_DecisionService.reference" ui:wsdlLocation="ApprovalRules_DecisionService.wsdl">
+    <interface.wsdl interface="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_DecisionService#wsdl.interface(IDecisionService)"/>
+  </reference>
 </componentType>

@@ -918,11 +918,11 @@
             </dataOutputAssociation>
             <script></script>
         </scriptTask>
-        <businessRuleTask isForCompensation="false" name="BusinessRuleTask" id="ACT964306517368">
+        <businessRuleTask isForCompensation="false" name="Determine Approvals" id="ACT9643103559760">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="235" y="276"/>
+                        <ns5:Position x="259" y="261"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -930,7 +930,7 @@
                         <ns5:StringFeature value="Begin Level" name="level"/>
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                     </ns5:FeatureSet>
-                    <ns5:BusinessRuleTaskData businessRuleName="Rules.Salesquote.ApprovalRules" functionName="ApprovalRules_DecisionService"/>
+                    <ns5:BusinessRuleTaskData businessRuleName="Rules.SSFBpmUni.ApprovalRules" functionName="ApprovalRules_DecisionService"/>
                     <ns5:LogHandlers/>
                 </ns5:OracleExtensions>
             </extensionElements>
@@ -949,10 +949,10 @@
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataOutput>
-                <inputSet id="ACT964306517368_uniqueInputSet">
+                <inputSet id="ACT9643103559760_uniqueInputSet">
                     <dataInputRefs>quote</dataInputRefs>
                 </inputSet>
-                <outputSet id="ACT964306517368_uniqueOutputSet">
+                <outputSet id="ACT9643103559760_uniqueOutputSet">
                     <dataOutputRefs>approvalFlow</dataOutputRefs>
                 </outputSet>
             </ioSpecification>
@@ -1353,7 +1353,7 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="GTW964157443041" targetRef="ACT964306517368" name="sf56" id="sf56">
+        <sequenceFlow sourceRef="GTW964157443041" targetRef="ACT9643103559760" name="sf56" id="sf56">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes/>
@@ -1366,7 +1366,7 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="ACT964306517368" targetRef="EXCLUSIVE_GATEWAY_1392682149642" name="sf178" id="sf178">
+        <sequenceFlow sourceRef="ACT9643103559760" targetRef="EXCLUSIVE_GATEWAY_1392682149642" name="sf179" id="sf179">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes/>
