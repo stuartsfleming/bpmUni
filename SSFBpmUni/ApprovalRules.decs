@@ -5,7 +5,7 @@
             <path>SSFBpmUni/oracle/rules/SSFBpmUni/ApprovalRules.rules</path>
         </repository>
     </ruleEngineProvider>
-    <decisionService name="ApprovalRules_DecisionService" ruleEngineProviderReference="OracleRulesSDK" targetNamespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_DecisionService">
+    <decisionService name="ApprovalRules_ApprovalRules_DecisionService" ruleEngineProviderReference="OracleRulesSDK" targetNamespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_ApprovalRules_DecisionService">
         <catalog>ApprovalRules</catalog>
         <pattern name="CallFunctionStateless">
             <arguments>
@@ -19,14 +19,14 @@
         </pattern>
     </decisionService>
     <schemaInformation>
-        <dictionary fqnPackage="SSFBpmUni" fqnName="ApprovalRules" updateNumber="404">
+        <dictionary fqnPackage="SSFBpmUni" fqnName="ApprovalRules" updateNumber="587">
             <schemaBrowser>
                 <package>com.mycompany.ns.salesquote</package>
                 <namespace>http://www.mycompany.com/ns/salesquote</namespace>
             </schemaBrowser>
-            <schemaImport namespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_DecisionService" localPart="Quote.xsd" schemaLocation="xsd/ApprovalRules_DecisionServiceMessageTypes.xsd" package="">
-                <import namespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_DecisionService" localPart="Quote.xsd"/>
-                <import namespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_DecisionService" localPart="ApprovalRules_DecisionServiceTypes.xsd"/>
+            <schemaImport namespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_ApprovalRules_DecisionService" localPart="Quote.xsd" schemaLocation="xsd/ApprovalRules_ApprovalRules_DecisionServiceMessageTypes.xsd" package="">
+                <import namespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_ApprovalRules_DecisionService" localPart="Quote.xsd"/>
+                <import namespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_ApprovalRules_DecisionService" localPart="ApprovalRules_ApprovalRules_DecisionServiceTypes.xsd"/>
                 <import namespace="http://xmlns.oracle.com/bpel/rules" localPart="DecisionServicePrimitiveTypes.xsd"/>
                 <import namespace="http://xmlns.oracle.com/bpel" localPart="BpelProcess.xsd"/>
                 <import namespace="http://www.mycompany.com/ns/salesquote" localPart="Quote.xsd"/>

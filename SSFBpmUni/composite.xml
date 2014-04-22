@@ -15,7 +15,8 @@
 	mode="active"
 	state="on">
  <import namespace="http://xmlns.oracle.com/bpel/workflow/taskService" location="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl" importType="wsdl"/>
- <import namespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_DecisionService" location="ApprovalRules_DecisionService.wsdl" importType="wsdl"/>
+ <import namespace="http://xmlns.oracle.com/ApprovalRules/ApprovalRules_ApprovalRules_DecisionService" location="ApprovalRules_ApprovalRules_DecisionService.wsdl"
+         importType="wsdl"/>
  <component name="SalesQuote">   
 		<implementation.bpmn src="processes/SalesQuote.bpmn"/>
   <property name="bpel.config.oneWayDeliveryPolicy" type="xs:string" many="false">sync</property>
@@ -61,6 +62,6 @@
  </wire>
  <wire>
   <source.uri>SalesQuote/Rules.SSFBpmUni.ApprovalRules.ApprovalRules_DecisionService.reference</source.uri>
-  <target.uri>ApprovalRules/ApprovalRules_DecisionService</target.uri>
+  <target.uri>ApprovalRules/ApprovalRules_ApprovalRules_DecisionService</target.uri>
  </wire>
 </composite>
