@@ -56,10 +56,21 @@
                     <description locale="en"></description>
                 </descriptions>
             </topicDocumentation>
+            <topicDocumentation name="ACT9643572818925">
+                <labels>
+                    <label locale="en">Determine Approvals</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
             <topicDocumentation name="EVT9107920146325">
                 <labels>
                     <label locale="en">Start</label>
                 </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
             </topicDocumentation>
             <topicDocumentation name="EVT9107920146450">
                 <labels>
@@ -94,14 +105,6 @@
             <topicDocumentation name="GTW964157443041">
                 <labels>
                     <label locale="en">ExclusiveGateway3</label>
-                </labels>
-                <descriptions>
-                    <description locale="en"></description>
-                </descriptions>
-            </topicDocumentation>
-            <topicDocumentation name="ACT9643572818925">
-                <labels>
-                    <label locale="en">Determine Approvals</label>
                 </labels>
                 <descriptions>
                     <description locale="en"></description>

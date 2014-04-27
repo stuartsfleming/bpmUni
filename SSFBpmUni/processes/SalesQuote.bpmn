@@ -81,7 +81,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="307" y="98"/>
+                        <ns5:Position x="327" y="50"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -94,7 +94,6 @@
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                         <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
                         <ns5:StringFeature value="INITIATOR" name="humanTaskType"/>
-                        <ns5:StringFeature value="" name="reinitiateSource"/>
                         <ns5:AttributeExpression attributeName="subjectExpressionFeature" language="http://www.w3.org/1999/XPath">'Enter Quote Details'
                             <extensionElements>
                                 <ns5:OracleExtensions>
@@ -835,7 +834,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="206" y="97"/>
+                        <ns5:Position x="222" y="42"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -1017,7 +1016,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="97" y="96"/>
+                        <ns5:Position x="90" y="37"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -1423,24 +1422,5 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </dataObject>
-        <artifact xsi:type="tTextAnnotation" id="textAnnotation">
-            <extensionElements>
-                <ns5:OracleExtensions>
-                    <ns5:GraphicsAttributes>
-                        <ns5:Position x="922" y="157"/>
-                        <ns5:Size width="235" height="107"/>
-                    </ns5:GraphicsAttributes>
-                    <ns5:FeatureSet>
-                        <ns5:StringFeature value="" name="associatedNode"/>
-                    </ns5:FeatureSet>
-                    <ns5:Localization>
-                        <ns5:Label>
-                            <ns5:LocalizedContent language="en">Last page 70</ns5:LocalizedContent>
-                        </ns5:Label>
-                    </ns5:Localization>
-                </ns5:OracleExtensions>
-            </extensionElements>
-            <text>Last page 70</text>
-        </artifact>
     </process>
 </definitions>

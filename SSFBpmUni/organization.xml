@@ -13,6 +13,9 @@
         </ns1:applicationRole>
         <ns1:applicationRole id="SSFBpmUni.SalesRep" isProcessRole="true">
             <ns5:name>SSFBpmUni.SalesRep</ns5:name>
+            <ns1:member type="USER">
+                <ns1:name>doug</ns1:name>
+            </ns1:member>
             <ns1:member type="APPROLE">
                 <ns1:name>BpmUniSalesRep</ns1:name>
             </ns1:member>
